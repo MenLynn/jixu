@@ -1,0 +1,87 @@
+
+.home .mask-line {
+    width: 48px;
+    height: 1px;
+    background: #fff;
+    margin-bottom: 10%;
+}
+.home .mask-content {
+    padding-top: 10px;
+    margin-left: 30px;
+}
+.home .mask-title .title {
+    font-size: 25px;
+}
+.con2-box {
+    background: #f7f7f7;
+}
+.con2-box-ul {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.con2-box-ul li {
+    width: 33%;
+    float: left;
+    padding-bottom: 10px;
+}
+.home-con2 .mask {
+     color: #fff;
+     background: rgba(0, 0, 0, .9);
+     padding: 8% 0 0 10%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 50%;
+ }
+.home-con2 .box-item {
+    padding-top: 10px;
+    margin-left: 30px;
+}
+.home-con2 .box-item .mask-line {
+    background: #999;
+}
+.home-con2 .mask-ul {
+    line-height: 30px;
+    margin-top: 18%;
+}
+.home-con2 .mask-ul a {
+    color: #fff;
+    font-size: 12px;
+}
+@media only screen and (min-width: 768px) {
+
+}
+.home-con3 {
+    line-height: 26px;
+    padding: 100px 0;
+}
+.home-con3 .title {
+    font-size: 50px;
+    margin: 20px 0;
+}
+.home-con3 .line {
+    width: 40px;
+    height: 4px;
+    background: #333;
+    margin: 0 auto 20px;
+}
+.home-con3 .intro {
+    font-size: 12px;
+}
+.tag-item .title {
+    font-size: 50px;
+    margin: 20px 0 0;
+}
+.tag-item p {
+    margin: 0 0 20px;
+}
+.tag-item .line {
+    background: #eebf02;
+    margin: inherit;
+}
