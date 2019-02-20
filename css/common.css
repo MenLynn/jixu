@@ -1,0 +1,96 @@
+@charset "utf-8";
+/*---------重置和全局使用的基本定义---------*/
+/*@media only screen and (min-width: 320px) {*/
+    /*html {*/
+        /*font-size: 62.5% !important;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (min-width: 640px) {*/
+    /*html {*/
+        /*font-size: 125% !important;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (min-width: 750px) {*/
+    /*html {*/
+        /*font-size: 150% !important;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (min-width: 1242px) {*/
+    /*html {*/
+        /*font-size: 187.5% !important;*/
+    /*}*/
+/*}*/
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -ms-touch-action: none;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", "Tahoma", "宋体b8b体", "SimSun", "sans-serif";
+}
+
+p, ul, ol, form, dl, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", "Tahoma", "宋体b8b体", "SimSun", "sans-serif"
+}
+
+dl, dd {
+    margin-left: 0;
+}
+
+ul, ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+em, var, cite, i {
+    font-style: normal;
+}
+
+small {
+    font-size: inherit;
+}
+
+s, a {
+    text-decoration: none;
+}
+
+:focus {
+    outline: none;
+}
+
+blockquote, q {
+    quotes: none;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show; /*table-layout:fixed;*/
+}
+
+img, iframe {
+    border: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+.fn-pl-0 {
+    padding-left: 0;
+}
+
+.fn-pr-0 {
+    padding-right: 0;
+}
