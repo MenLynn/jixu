@@ -8,7 +8,6 @@
     <meta name="description" content="。。。">
     <meta name="keywords" content="积旭">
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/common.css"/>
     <link rel="stylesheet" href="./css/index.css"/>
 </head>
@@ -18,14 +17,14 @@
     <!--左侧导航-->
     <div class="left-common"></div>
     <!--右侧主体-->
-    <div class="container-fluid home-section">
-        <div class="row home-con1">
+    <div class="home-section">
+        <div class="home-con1">
             <div class="home-con1">
-                <img style="width: 100%;" src="./img/home-1.jpg" class="img-responsive" alt="Responsive image">
+                <img style="width: 100%;" src="./img/home-1.jpg">
             </div>
         </div>
-        <div class="row home-con2">
-            <div class="col-sm-6 con2-box">
+        <div class="home-con2 clearfix">
+            <div class="con2-box pull-left ui-50">
                 <div class="box">
                     <ul class="list-inline con2-box-ul clearfix">
                         <li>
@@ -55,7 +54,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-6 con2-box fn-pl-0 fn-pr-0">
+            <div class="con2-box pull-left ui-50">
                 <div class="box" style="position: relative;">
                     <div class="mask">
                         <div class="pull-left">04</div>
@@ -65,7 +64,7 @@
                                 <div class="title">Piess</div>
                                 <div class="type">锅具</div>
                             </div>
-                            <ul class="list-unstyled mask-ul">
+                            <ul class="mask-ul">
                                 <li>
                                     <a href="javascript:;">品牌介绍</a>
                                 </li>
@@ -81,12 +80,12 @@
                             </ul>
                         </div>
                     </div>
-                    <img style="width: 100%;height: 100%;object-fit: cover;" src="./img/home-2.jpg" class="img-responsive" alt="image">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" src="./img/home-2.jpg" alt="image">
                 </div>
             </div>
         </div>
-        <div class="row home-con3">
-            <div class="col-xs-12 text-center" style="padding-bottom: 60px;">
+        <div class="home-con3">
+            <div class="home-con3-intro text-center" style="padding-bottom: 60px;">
                 <p class="text">16年中高端进口快消产品推广经验</p>
                 <h1 class="title">E-POINT GmbH</h1>
                 <div class="line"></div>
@@ -96,36 +95,41 @@
                     始终秉承中高端定位，中长期合作战略，成为中德业务桥梁。
                 </p>
             </div>
-            <div class="col-xs-12 home-con3-tags">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 tag-item">
-                        <h1 class="title">16</h1>
-                        <p>16年中高端进口快消产品推广经验</p>
-                        <div class="line"></div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 tag-item">
-                        <h1 class="title">200+</h1>
-                        <p>16年中高端进口快消产品推广经验</p>
-                        <div class="line"></div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 tag-item">
-                        <h1 class="title">100K</h1>
-                        <p>16年中高端进口快消产品推广经验</p>
-                        <div class="line"></div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 tag-item">
-                        <h1 class="title">300</h1>
-                        <p>16年中高端进口快消产品推广经验</p>
-                        <div class="line"></div>
-                    </div>
+            <div class="home-con3-tags clearfix">
+                <div class="tag-item ui-25">
+                    <h1 class="title">16</h1>
+                    <p>16年中高端进口快消产品推广经验</p>
+                    <div class="line"></div>
+                </div>
+                <div class="tag-item ui-25">
+                    <h1 class="title">200+</h1>
+                    <p>16年中高端进口快消产品推广经验</p>
+                    <div class="line"></div>
+                </div>
+                <div class="tag-item ui-25">
+                    <h1 class="title">100K</h1>
+                    <p>16年中高端进口快消产品推广经验</p>
+                    <div class="line"></div>
+                </div>
+                <div class="tag-item ui-25">
+                    <h1 class="title">300</h1>
+                    <p>16年中高端进口快消产品推广经验</p>
+                    <div class="line"></div>
                 </div>
             </div>
         </div>
-        <div class="row home-con4">
-            <div class="contact hidden-sm hidden-xs">
+        <div class="home-con4">
+            <div class="home-contact">
                 <h2>CONTACT US</h2>
                 <p style="margin-top: 10px;">联系我们</p>
                 <div class="line"></div>
+                <div class="clearfix">
+                    <div class="pull-left contact-lf">电话：</div>
+                    <div class="contact-text">
+                        <p>(021)66308866</p>
+                        <p>(021)66300077</p>
+                    </div>
+                </div>
             </div>
             <div id="allmap"></div>
         </div>
@@ -134,7 +138,7 @@
 
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=A4749739227af1618f7b0d1b588c0e85"></script>
 <script src="./js/jquery-3.3.1.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
+<!--<script src="./js/bootstrap.min.js"></script>-->
 <script type="text/javascript">
     $(function () {
       // 渲染地图

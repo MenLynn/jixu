@@ -35,6 +35,7 @@ html {
 body {
     margin: 0;
     font-size: 14px;
+    line-height: 1.5;
     font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", "Tahoma", "宋体b8b体", "SimSun", "sans-serif";
 }
 
@@ -81,33 +82,24 @@ table {
     border-spacing: 0;
     empty-cells: show; /*table-layout:fixed;*/
 }
-
-img, iframe {
-    border: none;
-}
-
-img {
-    vertical-align: top;
-    border-style: none;
-}
-
-.fn-pl-0 {
-    padding-left: 0;
-}
-
-.fn-pr-0 {
-    padding-right: 0;
-}
-
-.text-overflow {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.color-yellow {
-    color: #eabc00;
-}
+img, iframe {border: none;}
+img {vertical-align: top;border-style: none;}
+.fn-pl-0 {padding-left: 0;}
+.fn-pr-0 {padding-right: 0;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1}
+.pull-left {float: left;}
+.pull-right {float: right;}
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-overflow {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.color-yellow {color: #eabc00;}
+.ui-100 {width: 100%;}	/*宽100%*/
+.ui-50 { width: 50%;}		/*2col*/
+.ui-33 { width: 33.33%;}	/*3col*/
+.ui-25 { width: 25%;}		/*4col*/
+.ui-20 { width: 20%;}		/*5col*/
 
 .line {
     width: 40px;
