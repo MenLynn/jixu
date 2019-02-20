@@ -106,3 +106,20 @@ img {
 .color-yellow {
     color: #eabc00;
 }
+
+.line {
+    width: 40px;
+    height: 4px;
+    background: #333;
+    margin: 0 auto 20px;
+}
+
+/*导航*/
+.left-common {
+    float: left;
+    width: 100px;
+}
+
+.home-section {
+    margin-left: 100px;
+}

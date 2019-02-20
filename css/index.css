@@ -65,12 +65,6 @@
     font-size: 50px;
     margin: 20px 0;
 }
-.home-con3 .line {
-    width: 40px;
-    height: 4px;
-    background: #333;
-    margin: 0 auto 20px;
-}
 .home-con3 .intro {
     font-size: 12px;
 }
@@ -84,4 +78,23 @@
 .tag-item .line {
     background: #eebf02;
     margin: inherit;
+}
+.home-con4 {
+    position: relative;
+}
+.home-con4 .contact {
+    width: 260px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    z-index: 9;
+    color: #dfdfdf;
+    background: rgba(29, 29, 29, 1);
+    padding: 30px;
+}
+.home-con4 .line {
+    height: 2px;
+    background: #eebf02;
+    margin: 20px 0;
 }
