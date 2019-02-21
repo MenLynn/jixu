@@ -1,10 +1,6 @@
-.aboutus-box {
-    width: 70%;
-    font-size: 14px;
-    margin: 150px auto 80px;
-}
 .aboutus-box .title {
     font-size: 40px;
+    font-weight: normal;
     text-align: center;
     margin-bottom: 50px;
 }

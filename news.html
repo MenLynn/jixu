@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>新闻中心</title>
+    <meta name="description" content="。。。">
+    <meta name="keywords" content="积旭">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/news.css"/>
+</head>
+<body>
+<!--头部搜索导航-->
+<div class="header clearfix"></div>
+<!--主体-->
+<div class="news clearfix">
+    <!--左侧导航-->
+    <div class="nav-box"></div>
+    <!--右侧主体-->
+    <div class="section">
+        <div class="news-box info-box">
+            <h1 class="title">新闻中心</h1>
+            <div class="news-item clearfix">
+                <div class="item-lf">
+                    <img class="info-img" src="./img/img1.jpg">
+                </div>
+                <div class="item-rt" style="padding-left: 20px;">
+                    <p class="date color-yellow">2019.01</p>
+                    <h3 class="title">有关爆破工程的信息</h3>
+                    <p class="jianjie more-overflow">纯阿尔卑斯山盐与香草结合，这在阿尔卑斯山地区极具代表性 – 只是短期作为额外的特别版。海尔布隆，2016年3月家乡的食用香草受人瞩目。它们不仅出现在了烹饪爱好者的锅里，而且在顶极厨师的菜单上也有它们的存在。另外，德国最著名的盐品牌现在为市场带来了一种加香料的-芳香的香草混和物。从2016年3月到7月，一个专门的阿尔卑斯山-草本盐促销包装有售。</p>
+                    <p class="more"><a href="javascript:;">更多详情 &gt;</a></p>
+                </div>
+            </div>
+            <div class="news-item clearfix">
+                <div class="item-lf pull-left" style="width: 46%;">
+                    <img class="info-img" src="./img/img1.jpg">
+                </div>
+                <div class="item-rt" style="margin-left: 46%;padding-left: 20px;">
+                    <p class="date color-yellow">2019.01</p>
+                    <h3 class="title">有关爆破工程的信息</h3>
+                    <p class="jianjie more-overflow">纯阿尔卑斯山盐与香草结合，这在阿尔卑斯山地区极具代表性 – 只是短期作为额外的特别版。海尔布隆，2016年3月家乡的食用香草受人瞩目。它们不仅出现在了烹饪爱好者的锅里，而且在顶极厨师的菜单上也有它们的存在。另外，德国最著名的盐品牌现在为市场带来了一种加香料的-芳香的香草混和物。从2016年3月到7月，一个专门的阿尔卑斯山-草本盐促销包装有售。</p>
+                    <p class="more"><a href="javascript:;">更多详情 &gt;</a></p>
+                </div>
+            </div>
+            <div class="news-item clearfix">
+                <div class="item-lf pull-left" style="width: 46%;">
+                    <img class="info-img" src="./img/img1.jpg">
+                </div>
+                <div class="item-rt" style="margin-left: 46%;padding-left: 20px;">
+                    <p class="date color-yellow">2019.01</p>
+                    <h3 class="title">有关爆破工程的信息</h3>
+                    <p class="jianjie more-overflow">纯阿尔卑斯山盐与香草结合，这在阿尔卑斯山地区极具代表性 – 只是短期作为额外的特别版。海尔布隆，2016年3月家乡的食用香草受人瞩目。它们不仅出现在了烹饪爱好者的锅里，而且在顶极厨师的菜单上也有它们的存在。另外，德国最著名的盐品牌现在为市场带来了一种加香料的-芳香的香草混和物。从2016年3月到7月，一个专门的阿尔卑斯山-草本盐促销包装有售。</p>
+                    <p class="more"><a href="javascript:;">更多详情 &gt;</a></p>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer-box"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript">
+    $(function () {
+      var windowWidth;
+      var $itemlf = $('.news-item .item-lf'),
+        $itemrt = $('.news-item .item-rt');
+      initNews();
+
+      $(window).resize(function () {
+        initNews();
+      });
+
+      function initNews() {
+        windowWidth = window.innerWidth;
+        if (windowWidth > 992) {
+          $itemlf.css({'float': 'left', 'width': '46%'});
+          $itemrt.css({'margin-left': '46%'});
+        } else {
+          $itemlf.css({'float': 'none', 'width': '100%'});
+          $itemrt.css({'margin-left': '0'});
+        }
+        $itemlf.height($itemlf.width() * 0.67);
+      }
+    })
+</script>
+</body>
+</html>

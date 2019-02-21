@@ -1,0 +1,40 @@
+.question-box .title {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.question-item {
+    margin-bottom: 40px;
+}
+.question-item .item-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.question-item .item-box {
+    background: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.collapse-top, .collapse-box {
+    padding: 15px 35px;
+}
+.collapse-top {
+    font-size: 14px;
+    border-bottom: 1px solid #f3f3f3;
+    cursor: pointer;
+}
+.icon2 {
+    display: none;
+}
+.collapse-top.active .icon1 {
+    display: none;
+}
+.collapse-top.active .icon2 {
+    display: inline-block;
+}
+.collapse-box {
+    display: none;
+    color: #555;
+    line-height: 26px;
+}
