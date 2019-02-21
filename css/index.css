@@ -5,6 +5,7 @@
     margin-bottom: 10%;
 }
 .home .mask-content {
+    opacity: .8;
     padding-top: 10px;
     margin-left: 30px;
 }
@@ -13,6 +14,7 @@
 }
 .con2-box {
     background: #f7f7f7;
+    position: relative;
 }
 .con2-box-ul {
     position: relative;
@@ -24,19 +26,47 @@
     transform: translateY(-50%);
 }
 .con2-box-ul li {
-    width: 33%;
     float: left;
-    padding-bottom: 10px;
+    padding: 0 15px 15px;
+}
+.home-con1 {
+    position: relative;
+    font-size: 12px;
+}
+.home-con1-text {
+    padding: 15px;
+    position: absolute;
+    z-index: 9;
+    top: 10%;
+    right: 0;
+    left: 50%;
+}
+.home-con1-btns {
+    position: absolute;
+    z-index: 9;
+    bottom: 15%;
+    right: 0;
+    left: 55%;
+}
+.home-con1-btns span {
+    display: inline-block;
+    width: 150px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 20px;
+    border: 1px solid #aaa;
+    text-align: center;
+    cursor: pointer;
 }
 .home-con2 .mask {
-     color: #fff;
-     background: rgba(0, 0, 0, .9);
-     padding: 8% 0 0 10%;
-     position: absolute;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 50%;
+    color: #fff;
+    background: rgba(0, 0, 0, .9);
+    padding: 8% 0 0 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 50%;
  }
 .home-con2 .box-item {
     padding-top: 10px;
@@ -53,9 +83,6 @@
     color: #fff;
     font-size: 12px;
 }
-@media only screen and (min-width: 768px) {
-
-}
 .home-con3 {
     line-height: 26px;
     padding: 100px 0;
@@ -69,9 +96,12 @@
 }
 .home-con3-intro .intro {
     font-size: 12px;
+    padding: 0 15px;
 }
 .tag-item {
     float: left;
+    padding-bottom: 20px;
+    padding-left: 30px;
 }
 .tag-item .title {
     font-size: 50px;
@@ -98,6 +128,11 @@
     background: rgba(29, 29, 29, 1);
     padding: 30px;
 }
+.contact-item {
+    opacity: .8;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
 .home-contact .contact-text {
     margin-left: 50px;
 }
@@ -105,4 +140,71 @@
     height: 2px;
     background: #eebf02;
     margin: 20px 0;
+}
+.home-mobile .nav-box {
+    display: none;
+}
+.home-mobile .home-section {
+    margin-left: 0;
+}
+.anchorBL {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .con2-box:first-child {
+        height: auto !important;
+        padding: 20px 0 10px;
+    }
+    .con2-box-ul {
+        position: initial;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .home-con2 .mask-line {
+        margin-bottom: 10px;
+    }
+    .home .mask-title .title {
+        font-size: 20px;
+    }
+    .home-con3 {
+        padding: 50px 0 10px;
+    }
+    .home-con3-intro {
+        padding-bottom: 50px;
+    }
+    .home-con3-intro .title {
+        font-size: 25px;
+        margin: 15px 0 20px;
+    }
+    .tag-item .title {
+        font-size: 25px;
+    }
+    .home-contact {
+        width: 100%;
+        position: initial;
+        color: #333;
+        background: #fff;
+        padding-bottom: 0;
+    }
+    .footer-box {
+        display: none;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .home-con2 .mask {
+        padding: 15px 0 0 15px;
+    }
+    .home-con2 .mask-ul {
+        line-height: 24px;
+    }
+    .tag-item {
+        padding-left: 15px;
+    }
+    .home-contact {
+        padding-left: 15px;
+    }
 }
