@@ -1,3 +1,5 @@
+$(".nav-header").load("header.html");
+
 // 一级导航显示
 $('.nav-box').hover(function () {
   $('.nav-content').fadeIn(200);

@@ -27,7 +27,7 @@ $(function () {
 
   setTimeout(function () {
     init();
-  }, 100);
+  }, 50);
 
   $(window).resize(function () {
     init();

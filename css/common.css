@@ -111,12 +111,14 @@ textarea {
 }
 
 /*导航*/
-.nav-box {
+.nav-box-menu {
     width: 120px;
+    background: #fff;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 98;
+    bottom: 0;
+    z-index: 100;
 }
 .nav-box.active .nav-first {
     width: 75%;
@@ -132,10 +134,11 @@ textarea {
     background: #fff;
     font-size: 16px;
     text-align: center;
-    padding: 130px 0 80px;
-    position: absolute;
+    padding: 30px 60px 80px;
+    position: fixed;
     top: 0;
     left: 120px;
+    z-index: 100;
 }
 .nav-second {
     display: none;
