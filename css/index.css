@@ -48,7 +48,7 @@
     right: 0;
     left: 55%;
 }
-.home-con1-btns span {
+.home-con1-btns .btn-a {
     display: inline-block;
     width: 150px;
     height: 38px;

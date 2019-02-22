@@ -1,8 +1,10 @@
 // 一级导航显示
 $('.nav-box').hover(function () {
   $('.nav-content').fadeIn(200);
+  $('.nav-icon').attr('src', './img/icon-close.png').css('width', '17px');
 }, function () {
   $('.nav-content').fadeOut(200);
+  $('.nav-icon').attr('src', './img/icon-menu.png').css('width', '25px');
 });
 
 // 二级导航显示

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>联系我们</title>
+    <meta name="description" content="。。。">
+    <meta name="keywords" content="积旭">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/contact.css"/>
+</head>
+<body>
+<!--头部搜索导航-->
+<div class="header clearfix"></div>
+<!--主体-->
+<div class="contact clearfix">
+    <!--左侧导航-->
+    <div class="nav-box"></div>
+    <!--右侧主体-->
+    <div class="section">
+        <div class="contact-box">
+            <div class="contact-left">
+                <p>联系我们</p>
+                <h3 class="text">对我们的产品有什么问题吗? 对这个网站有什么意见吗? 那么请与我们联络.</h3>
+                <form>
+                    <div class="form-group clearfix">
+                        <div class="control-text pull-left">您的信息<span class="red">*</span></div>
+                        <div class="control-box">
+                            <textarea class="input-control" style="height: 150px;" placeholder="输入您的信息"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group clearfix nomargin">
+                        <div class="item-33 pull-left ui-33 clearfix">
+                            <div class="control-text pull-left">称呼</div>
+                            <div class="control-box">
+                                <select class="input-control">
+                                    <option value="1">11</option>
+                                    <option value="2">22</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item-33 pull-left ui-33 clearfix">
+                            <div class="control-text pull-left">名<span class="red">*</span></div>
+                            <div class="control-box">
+                                <input class="input-control">
+                            </div>
+                        </div>
+                        <div class="item-33 pull-left ui-33 clearfix">
+                            <div class="control-text pull-left">姓<span class="red">*</span></div>
+                            <div class="control-box">
+                                <input class="input-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group clearfix nomargin">
+                        <div class="item-66 pull-left ui-66 clearfix">
+                            <div class="control-text pull-left">E-Mail<span class="red">*</span></div>
+                            <div class="control-box">
+                                <input class="input-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group clearfix nomargin">
+                        <div class="item-66 pull-left ui-66 clearfix">
+                            <div class="control-text pull-left">街道<span class="red">*</span></div>
+                            <div class="control-box">
+                                <input class="input-control">
+                            </div>
+                        </div>
+                        <div class="item-33 pull-left ui-33 clearfix">
+                            <div class="control-text pull-left">号码<span class="red">*</span></div>
+                            <div class="control-box">
+                                <input class="input-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="item-66 pull-left ui-66 clearfix">
+                            <div class="control-text pull-left">邮箱<span class="red">*</span></div>
+                            <div class="control-box">
+                                <input class="input-control">
+                            </div>
+                        </div>
+                        <div class="item-33 pull-left ui-33 clearfix">
+                            <div class="control-text pull-left">地方<span class="red">*</span></div>
+                            <div class="control-box">
+                                <input class="input-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 40px;">
+                        <div>
+                            <div class="control-box">
+                                <button class="btn">发送</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 40px;">
+                        <div style="color: #666;font-size: 12px;">
+                            <div class="control-box">
+                                您的个人资料我们会绝对保密。我们只使用它一次来回答你的问题。我们不会向第三方披露您的个人信息或与其它人共享。
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-way">
+                <div class="contact-way-content">
+                    <p class="way">联系方式</p>
+                    <p class="title">上海积锦电子有限公司</p>
+                    <p>工作日： 8:30-21:00</p>
+                    <p>咨询热线： 4008207820</p>
+                    <p>上海市徐汇区漕溪路270号2号楼2205室</p>
+                    <p>pm@e-point.cn</p>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer-box"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript">
+  $(function () {
+    var windowWidth;
+    var $item33 = $('.item-33'), $item66 = $('.item-66');
+    initNews();
+
+    $(window).resize(function () {
+      initNews();
+    });
+
+    function initNews() {
+      windowWidth = window.innerWidth;
+      if (windowWidth > 550) {
+        $('.nomargin').css('margin-bottom', '10px');
+        $item33.addClass('ui-33').removeClass('ui-100').css('margin-bottom', '0');
+        $item66.addClass('ui-66').removeClass('ui-100').css('margin-bottom', '0');
+      } else {
+        $('.nomargin').css('margin-bottom', '0');
+        $item33.addClass('ui-100').removeClass('ui-33').css('margin-bottom', '15px');
+        $item66.addClass('ui-100').removeClass('ui-66').css('margin-bottom', '15px');
+      }
+    }
+  })
+</script>
+</body>
+</html>

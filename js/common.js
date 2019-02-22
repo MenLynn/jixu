@@ -9,7 +9,6 @@ $(function () {
   function init() {
     windowWidth = window.innerWidth;
     $('.nav-content').width(windowWidth - 120);
-    $('.section').css('min-height', window.innerHeight + 'px');
 
     if (windowWidth > 768) {
       $('.nav-box').show();
