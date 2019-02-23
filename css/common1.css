@@ -1,0 +1,181 @@
+@charset "utf-8";
+/*---------重置和全局使用的基本定义---------*/
+/*@media only screen and (min-width: 320px) {*/
+    /*html {*/
+        /*font-size: 62.5% !important;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (min-width: 640px) {*/
+    /*html {*/
+        /*font-size: 125% !important;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (min-width: 750px) {*/
+    /*html {*/
+        /*font-size: 150% !important;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (min-width: 1242px) {*/
+    /*html {*/
+        /*font-size: 187.5% !important;*/
+    /*}*/
+/*}*/
+html {font-size: 62.5%;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;-ms-touch-action: none;}
+body {color: #333;font-size: 14px;background: #f7f7f7;line-height: 1.5;font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", "Tahoma", "宋体b8b体", "SimSun", "sans-serif";}
+html, body {width: 100%;height: 100%;}
+* {box-sizing: border-box;margin: 0;padding: 0;}
+ul, ol {list-style: none;}
+em, var, cite, i {font-style: normal;}
+small {font-size: inherit;}
+s, a {color: #333;text-decoration: none;}
+:focus {outline: none;}
+table {border-collapse: collapse;border-spacing: 0;empty-cells: show; /*table-layout:fixed;*/}
+img, iframe {border: none;}
+img {vertical-align: top;border-style: none;}
+.fn-pl-0 {padding-left: 0;}
+.fn-pr-0 {padding-right: 0;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1}
+.pull-left {float: left;}
+.pull-right {float: right;}
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-overflow {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.more-overflow {text-overflow: -o-ellipsis-lastline;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.color-yellow {color: #ffba00;}
+.red {color: #f00;}
+.ui-100 {width: 100%;}	/*宽100%*/
+.ui-66 { width: 66.66%;}
+.ui-50 { width: 50%;}		/*2col*/
+.ui-33 { width: 33.33%;}	/*3col*/
+.ui-25 { width: 25%;}		/*4col*/
+.ui-20 { width: 20%;}		/*5col*/
+.btn {
+    /*padding: 3px 10px;*/
+    /*border: 1px solid #eee;*/
+    /*background: #fff;*/
+}
+button,
+select { /* 1 */
+    text-transform: none;
+}
+textarea {
+    resize: none;
+}
+
+.input-control {
+    display: block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #fff;
+    padding: 0 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #eee;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.info-img {
+    width: 100%;height: 100%;object-fit: cover;
+}
+.line {
+    width: 40px;
+    height: 4px;
+    background: #333;
+    margin: 0 auto 30px;
+}
+.info-box {
+    width: 70%;
+    font-size: 14px;
+    margin: auto;
+    padding: 170px 0 80px;
+}
+
+/*头部搜索固定*/
+.header {
+    background: transparent;
+    padding: 30px 60px;
+    position: fixed;
+    top: 0;
+    left: 120px;
+    right: 0;
+    z-index: 99;
+}
+
+/*导航*/
+.nav-box-menu {
+    width: 120px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.nav-box.active .nav-first {
+    width: 75%;
+}
+.nav-box.active .nav-second {
+    position: absolute;
+    top: 55px;
+    left: 55%;
+}
+.nav-content {
+    display: none;
+    line-height: 50px;
+    background: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 60px 80px;
+    position: fixed;
+    top: 0;
+    left: 120px;
+    z-index: 100;
+}
+.nav-second {
+    display: none;
+}
+.nav-icon-switch {
+    width: 50px;
+    display: inline-block;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.section {
+    margin-left: 120px;
+}
+
+/*底部*/
+.footer {
+    padding: 50px 0 40px;
+}
+.footer-img {
+    margin-bottom: 20px;
+}
+.footer-a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .info-box {
+        width: 90%;
+        padding-top: 100px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .question-box .title, .news-box .title {
+        font-size: 25px !important;
+        margin-bottom: 20px !important;
+    }
+}

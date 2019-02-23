@@ -128,6 +128,13 @@
     background: rgba(29, 29, 29, 1);
     padding: 30px;
 }
+.home-contact.active {
+    width: 100%;
+    position: initial;
+    color: #333;
+    background: #fff;
+    padding-bottom: 0;
+}
 .contact-item {
     opacity: .8;
     font-size: 12px;

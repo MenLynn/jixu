@@ -3,146 +3,236 @@
 <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>首页</title>
     <meta name="description" content="。。。">
     <meta name="keywords" content="积旭">
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="./css/common.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/layui/layui.css"/>
+    <!--<link rel="stylesheet" href="css/jquery.mmenu.all.min.css"/>-->
+    <link rel="stylesheet" href="css/swiper/swiper.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+    </style>
 </head>
 <body>
-<!--头部搜索导航-->
-<div class="header clearfix"></div>
-<!--主体-->
-<div class="home clearfix">
-    <!--左侧导航-->
-    <div class="nav-box"></div>
-    <!--右侧主体-->
-    <div class="section">
-        <div class="home-con1">
-            <img style="width: 100%;object-fit: cover;" src="./img/banner-2.jpg">
-            <!--<div class="home-con1-text">-->
-                <!--<div style="font-size: 30px;">中高端进口</div>-->
-                <!--<div style="color: #00537f;font-size: 50px;margin: 15px 0 25px;">快消产品推广</div>-->
-                <!--<p style="line-height: 22px;">品牌推广  /  营销企划  /  价格定位和管理  /  供应链管理  /  渠道建设 <br> 线上 + 线下商品同步推广</p>-->
-            <!--</div>-->
-            <div class="home-con1-btns">
-                <a class="btn-a" href="about-us.html" target="_blank">关于我们</a>
-                <a class="btn-a">联系我们</a>
+<!-- 菜单 -->
+<div id="menu" class="animated bounceInRight">
+    <div class="menu-box font16">
+        <ul class="nav-first">
+            <li class="nav-first-li">
+                <a class="nav-a" href="javascript:void(0);">
+                    碘盐 / Bad Reichenhaller
+                    <i class="fa fa-plus nav-icon-switch" data-index="0"></i>
+                </a>
+                <ul class="nav-second animated fadeIn">
+                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">品牌介绍</a></li>
+                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">产品优势</a></li>
+                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">产品介绍</a></li>
+                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">产品详情</a></li>
+                </ul>
+            </li>
+            <li class="nav-first-li">
+                <a class="nav-a" href="javascript:void(0);">
+                    护肤 / Love Your Planet
+                    <i class="fa fa-plus nav-icon-switch" data-index="0"></i>
+                </a>
+                <ul class="nav-second animated fadeIn">
+                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">a2222</a></li>
+                </ul>
+            </li>
+            <li class="nav-first-li">
+                <a class="nav-a" href="javascript:void(0);">
+                    牙膏 / Putzi 锅具 / Ri
+                    <i class="fa fa-plus nav-icon-switch" data-index="0"></i>
+                </a>
+                <ul class="nav-second animated fadeIn">
+                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">a2222</a></li>
+                </ul>
+            </li>
+            <li class="nav-first-li">
+                <a class="nav-a" href="javascript:void(0);">
+                    锅具 / Ri
+                </a>
+            </li>
+            <li class="nav-first-li">
+                <a class="nav-a" href="./about-us.html" target="_blank">
+                    关于我们 / About US
+                </a>
+            </li>
+            <li class="nav-first-li">
+                <a class="nav-a" href="./news.html" target="_blank">
+                    新闻中心 / News
+                </a>
+            </li>
+            <li class="nav-first-li">
+                <a class="nav-a" href="./question.html" target="_blank">
+                    常见问题 / FAQ
+                </a>
+            </li>
+            <li class="nav-first-li">
+                <a class="nav-a" href="./contact.html" target="_blank">
+                    联系我们 / Contact US
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="index">
+    <div class="fixed_top clearfix layui-show-sm-block layui-hide-xs">
+        <div class="pull-left" style="padding-right: 2rem;">
+            <i class="fa fa-align-left nav-icon"></i>
+        </div>
+        <div class="pull-left" style="padding-left: 3rem;">
+            <img style="width: 9rem;" src="./img/icon-logo.png">
+        </div>
+        <div class="pull-right">
+            <i class="fa fa-search" style="font-size: 1.6rem;"></i>
+        </div>
+    </div>
+    <div class="fixed_top layui-hide-sm">
+        <div class="pull-right">
+            <i class="fa fa-align-left nav-icon"></i>
+        </div>
+    </div>
+    <div class="index_swiper swiper-container swiper-container-horizontal swiper-container-fade">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="javascript:" class="swiper-slide-pic" style="background-image: url(./img/banner-2.jpg);"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:" class="swiper-slide-pic" style="background-image: url(./img/banner-3.jpg);"></a>
             </div>
         </div>
-        <div class="home-con2 clearfix">
-            <div class="con2-box pull-left">
-                <ul class="list-inline con2-box-ul clearfix">
-                    <li class="con2-box-li">
-                        <div class="pull-left">01</div>
-                        <div class="box-item">
-                            <div class="mask-line"></div>
+        <div class="swiper-button-prev">
+            <i class="fa fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next">
+            <i class="fa fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="layui-row index_1" style="background: #f7f7f7;">
+        <div class="layui-col-md6" style="font-size: 1rem;;">
+            <div class="index_1-box">
+                <div class="index_1-content">
+                    <div class="clearfix text-overflow index_1-item wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.25s">
+                        <p class="pull-left">01</p>
+                        <div class="item-box">
+                            <div class="line"></div>
                             <p class="text-overflow">Bad REichenhaller</p>
                             <p class="text-overflow">碘盐</p>
                         </div>
-                    </li>
-                    <li class="con2-box-li">
-                        <div class="pull-left">02</div>
-                        <div class="box-item">
-                            <div class="mask-line"></div>
+                    </div>
+                    <div class="clearfix text-overflow index_1-item wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <p class="pull-left">02</p>
+                        <div class="item-box">
+                            <div class="line"></div>
                             <p class="text-overflow">Bad REichenhaller</p>
                             <p class="text-overflow">碘盐</p>
                         </div>
-                    </li>
-                    <li class="con2-box-li">
-                        <div class="pull-left">03</div>
-                        <div class="box-item">
-                            <div class="mask-line"></div>
+                    </div>
+                    <div class="clearfix text-overflow index_1-item wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.75s">
+                        <p class="pull-left">03</p>
+                        <div class="item-box">
+                            <div class="line"></div>
                             <p class="text-overflow">Bad REichenhaller</p>
                             <p class="text-overflow">碘盐</p>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="con2-box pull-left">
-                <div class="mask">
-                    <div class="pull-left">04</div>
-                    <div class="mask-content">
-                        <div class="mask-line"></div>
-                        <div class="mask-title color-yellow">
-                            <div class="title">Piess</div>
-                            <div class="type">锅具</div>
-                        </div>
-                        <ul class="mask-ul">
-                            <li>
-                                <a href="javascript:;">品牌介绍</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">产品优势</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">产品介绍</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">产品目录</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-                <img style="width: 100%;height: 100%;object-fit: cover;" src="./img/home-2.jpg" alt="image">
             </div>
         </div>
-        <div class="home-con3">
-            <div class="home-con3-intro text-center">
-                <p class="text">16年中高端进口快消产品推广经验</p>
-                <h1 class="title">E-POINT GmbH</h1>
-                <div class="line"></div>
-                <p class="intro">
-                    E-POINT GmbH公司成立于2001年，<br />
-                    具有16年中高端进口快消产品推广经验，致力于品牌推广，营销企划，价格定位和管理，供应链管理，渠道建设，线上/线下商品同步推广。<br />
-                    始终秉承中高端定位，中长期合作战略，成为中德业务桥梁。
-                </p>
-            </div>
-            <div class="home-con3-tags clearfix">
-                <div class="tag-item">
-                    <h1 class="title">16</h1>
-                    <p>16年中高端进口快消产品推广经验</p>
-                    <div class="line"></div>
-                </div>
-                <div class="tag-item">
-                    <h1 class="title">200+</h1>
-                    <p>16年中高端进口快消产品推广经验</p>
-                    <div class="line"></div>
-                </div>
-                <div class="tag-item">
-                    <h1 class="title">100K</h1>
-                    <p>16年中高端进口快消产品推广经验</p>
-                    <div class="line"></div>
-                </div>
-                <div class="tag-item">
-                    <h1 class="title">300</h1>
-                    <p>16年中高端进口快消产品推广经验</p>
-                    <div class="line"></div>
+        <div class="layui-col-md6 index-two">
+            <div class="wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.25s" style="padding-bottom: 55%;background: url(./img/home-2.jpg) no-repeat center;"></div>
+            <div class="mask">
+                <div class="pull-left" style="font-size: .9rem;">04</div>
+                <div class="mask-content">
+                    <div class="mask-line"></div>
+                    <div class="mask-title color-yellow">
+                        <div class="title">Piess</div>
+                        <div class="type">锅具</div>
+                    </div>
+                    <ul class="mask-ul">
+                        <li>
+                            <a class="font14" href="javascript:;">品牌介绍</a>
+                        </li>
+                        <li>
+                            <a class="font14" href="javascript:;">产品优势</a>
+                        </li>
+                        <li>
+                            <a class="font14" href="javascript:;">产品介绍</a>
+                        </li>
+                        <li>
+                            <a class="font14" href="javascript:;">产品目录</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="home-con4">
+    </div>
+    <div class="layui-row index_2">
+        <div class="layui-col-xs12 index_2-box text-center">
+            <p class="text wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.25s">16年中高端进口快消产品推广经验</p>
+            <h1 class="title wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.27s">E-POINT GmbH</h1>
+            <div class="line wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.3s"></div>
+            <p class="intro font16 wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.5s">
+                E-POINT GmbH公司成立于2001年，<br />
+                具有16年中高端进口快消产品推广经验，致力于品牌推广，营销企划，价格定位和管理，供应链管理，渠道建设，线上/线下商品同步推广。<br />
+                始终秉承中高端定位，中长期合作战略，成为中德业务桥梁。
+            </p>
+        </div>
+    </div>
+    <div class="layui-row index_3">
+        <div class="layui-col-sm6 layui-col-md3 index_3-item wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.25s">
+            <h1 class="title">16</h1>
+            <p class="font16 text-overflow">16年中高端进口快消产品推广经验</p>
+            <div class="line"></div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md3 index_3-item wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.75s">
+            <h1 class="title">200+</h1>
+            <p class="font16 text-overflow">16年中高端进口快消产品推广经验</p>
+            <div class="line"></div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md3 index_3-item wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="1s">
+            <h1 class="title">100K</h1>
+            <p class="font16 text-overflow">16年中高端进口快消产品推广经验</p>
+            <div class="line"></div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md3 index_3-item wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="1.25s">
+            <h1 class="title">300</h1>
+            <p class="font16 text-overflow">16年中高端进口快消产品推广经验</p>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="layui-row index_4">
+        <div class="layui-col-xs12 wow slideInUp animated" data-wow-duration="1s" data-wow-delay="0.25s">
             <div id="allmap"></div>
-            <div class="home-contact">
-                <h2 style="opacity: .8;">CONTACT US</h2>
-                <p style="margin-top: 10px;opacity: .8;">联系我们</p>
+            <div class="index_contact layui-show-sm-block layui-hide-xs">
+                <h2 class="title">CONTACT US</h2>
+                <p class="title-text">联系我们</p>
                 <div class="line"></div>
-                <div class="contact-item clearfix">
+                <div class="index_contact-item clearfix">
                     <div class="pull-left contact-lf">电话：</div>
                     <div class="contact-text">
                         <p>(021)66308866</p>
                         <p>(021)66300077</p>
                     </div>
                 </div>
-                <div class="contact-item clearfix">
+                <div class="index_contact-item clearfix">
                     <div class="pull-left contact-lf">邮箱：</div>
                     <div class="contact-text">
                         <p>545832154@qq.com</p>
                     </div>
                 </div>
-                <div class="contact-item clearfix">
+                <div class="index_contact-item clearfix">
                     <div class="pull-left contact-lf">地址：</div>
                     <div class="contact-text">
                         <p>上海市浦东新区陆家嘴世纪 <br>大道八号上海国金中心商场</p>
@@ -150,60 +240,105 @@
                 </div>
             </div>
         </div>
-        <!--footer-->
-        <div class="footer-box"></div>
+        <div class="layui-col-xs12 layui-hide-sm wow slideInRight animated" data-wow-duration="1s" data-wow-delay="0.5s">
+            <div class="index_contact index_contact2">
+                <h2 class="title">CONTACT US</h2>
+                <p class="title-text">联系我们</p>
+                <div class="line"></div>
+                <div class="index_contact-item clearfix">
+                    <div class="pull-left contact-lf">电话：</div>
+                    <div class="contact-text">
+                        <p>(021)66308866</p>
+                        <p>(021)66300077</p>
+                    </div>
+                </div>
+                <div class="index_contact-item clearfix">
+                    <div class="pull-left contact-lf">邮箱：</div>
+                    <div class="contact-text">
+                        <p>545832154@qq.com</p>
+                    </div>
+                </div>
+                <div class="index_contact-item clearfix">
+                    <div class="pull-left contact-lf">地址：</div>
+                    <div class="contact-text">
+                        <p>上海市浦东新区陆家嘴世纪 <br>大道八号上海国金中心商场</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row index_5">
+        <div class="layui-col-xs12">
+            <div class="footer text-center">
+                <div class="footer-img">
+                    <img style="width: 9rem;" src="./img/icon-logo.png">
+                </div>
+                <div class="footer-con">
+                    <a class="footer-a" href="javascript:;">关于我们</a>
+                    <a class="footer-a" href="javascript:;">新闻中心</a>
+                    <a class="footer-a" href="javascript:;">常见问题</a>
+                    <a class="footer-a" href="javascript:;">市场分析</a>
+                    <a class="footer-a" href="javascript:;">联系我们</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=A4749739227af1618f7b0d1b588c0e85"></script>
 <script type="text/javascript" src="./js/jquery.min.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
+<!--<script type="text/javascript" src="./js/jquery.mmenu.min.js"></script>-->
+<!--<script type="text/javascript" src="./js/layui.all.js"></script>-->
+<script type="text/javascript" src="./js/swiper.min.js"></script>
+<script type="text/javascript" src="./js/wow.min.js"></script>
 <script type="text/javascript">
   $(function () {
-    var windowWidth;
     // 渲染地图
     var map = new BMap.Map("allmap");  // 创建Map实例
     map.centerAndZoom("上海", 15);
     // map.enableScrollWheelZoom(true);  // 地图缩放
 
-    var $box = $('.con2-box');
-    var $allmap = $('#allmap');
-    initDefault();
+    // 动画效果
+    new WOW().init();
 
-    function initDefault() {
-      windowWidth = window.innerWidth;
-      // 获取图片宽高比例
-      $box.height($box.width() * 0.75);
-
-      if (windowWidth > 768) {
-        $allmap.height($allmap.width() / 2);
-        $box.addClass('ui-50').removeClass('ui-100');
-      } else {
-        $allmap.height($allmap.width());
-        $box.addClass('ui-100').removeClass('ui-50');
-      }
-
-      if (windowWidth > 992) {
-        $('.home-con1-btns').show();
-      } else {
-        $('.home-con1-btns').hide();
-      }
-
-      if (windowWidth > 768) {
-        $('.tag-item').addClass('ui-25').removeClass('ui-50').removeClass('ui-100');
-        $('.con2-box-li').addClass('ui-33').removeClass('ui-100');
-      } else if (windowWidth > 550) {
-        $('.tag-item').addClass('ui-50').removeClass('ui-25').removeClass('ui-100');
-        $('.con2-box-li').addClass('ui-33').removeClass('ui-100');
-      } else {
-        $('.tag-item').addClass('ui-100').removeClass('ui-25').removeClass('ui-50');
-        $('.con2-box-li').addClass('ui-100').removeClass('ui-33');
-      }
-    }
-
-    $(window).resize(function () {
-      initDefault();
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: '.swiper-pagination',
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      autoplay: 3000,
+      spaceBetween: 30,
+      effect: 'fade'
     });
+
+    // 菜单
+    $('.nav-icon').click(function () {
+      $("#menu").toggle();
+      if ($('.nav-icon').hasClass('fa-align-left')) {
+        $('.nav-icon').removeClass('fa-align-left').addClass('fa-close')
+      } else {
+        $('.nav-icon').removeClass('fa-close').addClass('fa-align-left')
+      }
+    });
+
+    $('.nav-first-li > a').on('click', function () {
+      $('.nav-first').addClass('active');
+      $(this).addClass('active').siblings().show();
+      $(this).parent().siblings().children('.nav-second').hide();
+      $(this).parent().siblings().children('.nav-a').removeClass('active');
+      $('.nav-second a').removeClass('active');
+    });
+
+    $('.nav-second a').on('click', function () {
+      $(this).addClass('active').parent().siblings().children().removeClass('active');
+    });
+
+    $('.index-two').hover(function () {
+      $('.index-two .mask').addClass('active')
+    }, function () {
+      $('.index-two .mask').removeClass('active')
+    });
+
   });
 </script>
 </body>
