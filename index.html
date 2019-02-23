@@ -9,7 +9,7 @@
     <meta name="keywords" content="积旭">
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="css/layui/layui.css"/>
-    <!--<link rel="stylesheet" href="css/jquery.mmenu.all.min.css"/>-->
+    <link rel="stylesheet" href="./js/src/css/jquery.mmenu.all.css"/>
     <link rel="stylesheet" href="css/swiper/swiper.min.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
@@ -19,88 +19,96 @@
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-
-    </style>
 </head>
 <body>
-<!-- 菜单 -->
-<div id="menu" class="animated bounceInRight">
-    <div class="menu-box font16">
-        <ul class="nav-first">
-            <li class="nav-first-li">
-                <a class="nav-a" href="javascript:void(0);">
-                    碘盐 / Bad Reichenhaller
-                    <i class="fa fa-plus nav-icon-switch" data-index="0"></i>
-                </a>
-                <ul class="nav-second animated fadeIn">
-                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">品牌介绍</a></li>
-                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">产品优势</a></li>
-                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">产品介绍</a></li>
-                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">产品详情</a></li>
-                </ul>
-            </li>
-            <li class="nav-first-li">
-                <a class="nav-a" href="javascript:void(0);">
-                    护肤 / Love Your Planet
-                    <i class="fa fa-plus nav-icon-switch" data-index="0"></i>
-                </a>
-                <ul class="nav-second animated fadeIn">
-                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">a2222</a></li>
-                </ul>
-            </li>
-            <li class="nav-first-li">
-                <a class="nav-a" href="javascript:void(0);">
-                    牙膏 / Putzi 锅具 / Ri
-                    <i class="fa fa-plus nav-icon-switch" data-index="0"></i>
-                </a>
-                <ul class="nav-second animated fadeIn">
-                    <li class="nav-second-li"><a class="nav-a" href="javascript:void(0);">a2222</a></li>
-                </ul>
-            </li>
-            <li class="nav-first-li">
-                <a class="nav-a" href="javascript:void(0);">
-                    锅具 / Ri
-                </a>
-            </li>
-            <li class="nav-first-li">
-                <a class="nav-a" href="./about-us.html" target="_blank">
-                    关于我们 / About US
-                </a>
-            </li>
-            <li class="nav-first-li">
-                <a class="nav-a" href="./news.html" target="_blank">
-                    新闻中心 / News
-                </a>
-            </li>
-            <li class="nav-first-li">
-                <a class="nav-a" href="./question.html" target="_blank">
-                    常见问题 / FAQ
-                </a>
-            </li>
-            <li class="nav-first-li">
-                <a class="nav-a" href="./contact.html" target="_blank">
-                    联系我们 / Contact US
-                </a>
-            </li>
-        </ul>
+<div id="page" class="index">
+    <!-- 菜单 -->
+    <div id="menu" class="mm-menu mm-offcanvas animated bounceInRight">
+        <div id="panel-menu">
+            <ul>
+                <li>
+                    <a class="nav-a" href="javascript:void(0);">
+                        碘盐 / Bad Reichenhaller
+                    </a>
+                    <ul class="menu_2">
+                        <li><a class="nav-a" href="javascript:void(0);">品牌介绍</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">产品优势</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">产品介绍</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">产品详情</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-a" href="javascript:void(0);">
+                        护肤 / Love Your Planet
+                    </a>
+                    <ul class="menu_2">
+                        <li><a class="nav-a" href="javascript:void(0);">1</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">2</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">3</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-a" href="javascript:void(0);">
+                        牙膏 / Putzi
+                    </a>
+                    <ul class="menu_2">
+                        <li><a class="nav-a" href="javascript:void(0);">1</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">2</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">3</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-a" href="javascript:void(0);">
+                        锅具 / Riess
+                    </a>
+                    <ul class="menu_2">
+                        <li><a class="nav-a" href="javascript:void(0);">1</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">2</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">3</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-a" href="./about-us.html" target="_blank">
+                        关于我们 / About US
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-a" href="./news.html" target="_blank">
+                        新闻中心 / News
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-a" href="./question.html" target="_blank">
+                        常见问题 / FAQ
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-a" href="./contact.html" target="_blank">
+                        联系我们 / Contact US
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="index">
     <div class="fixed_top clearfix layui-show-sm-block layui-hide-xs">
         <div class="pull-left" style="padding-right: 2rem;">
-            <i class="fa fa-align-left nav-icon"></i>
+            <a href="#menu" class="fa fa-bars font24"></a>
+            <a href="#page" class="fa fa-close font24"></a>
         </div>
         <div class="pull-left" style="padding-left: 3rem;">
-            <img style="width: 9rem;" src="./img/icon-logo.png">
+            <img class="icon-logo" src="./img/icon-logo.png">
         </div>
         <div class="pull-right">
             <i class="fa fa-search" style="font-size: 1.6rem;"></i>
         </div>
     </div>
-    <div class="fixed_top layui-hide-sm">
+    <div class="fixed_top layui-hide-sm" style="left: initial;">
         <div class="pull-right">
-            <i class="fa fa-align-left nav-icon"></i>
+            <a href="#menu" class="fa fa-bars font24"></a>
+            <a href="#page" class="fa fa-close font24"></a>
         </div>
     </div>
     <div class="index_swiper swiper-container swiper-container-horizontal swiper-container-fade">
@@ -184,8 +192,8 @@
             <h1 class="title wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.27s">E-POINT GmbH</h1>
             <div class="line wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.3s"></div>
             <p class="intro font16 wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.5s">
-                E-POINT GmbH公司成立于2001年，<br />
-                具有16年中高端进口快消产品推广经验，致力于品牌推广，营销企划，价格定位和管理，供应链管理，渠道建设，线上/线下商品同步推广。<br />
+                E-POINT GmbH公司成立于2001年，<br/>
+                具有16年中高端进口快消产品推广经验，致力于品牌推广，营销企划，价格定位和管理，供应链管理，渠道建设，线上/线下商品同步推广。<br/>
                 始终秉承中高端定位，中长期合作战略，成为中德业务桥梁。
             </p>
         </div>
@@ -214,7 +222,7 @@
     </div>
     <div class="layui-row index_4">
         <div class="layui-col-xs12 wow slideInUp animated" data-wow-duration="1s" data-wow-delay="0.25s">
-            <div id="allmap"></div>
+            <div id="allmap" style="background: url('./img/home-1.jpg') no-repeat center;background-size: cover;"></div>
             <div class="index_contact layui-show-sm-block layui-hide-xs">
                 <h2 class="title">CONTACT US</h2>
                 <p class="title-text">联系我们</p>
@@ -267,39 +275,24 @@
             </div>
         </div>
     </div>
-    <div class="layui-row index_5">
-        <div class="layui-col-xs12">
-            <div class="footer text-center">
-                <div class="footer-img">
-                    <img style="width: 9rem;" src="./img/icon-logo.png">
-                </div>
-                <div class="footer-con">
-                    <a class="footer-a" href="javascript:;">关于我们</a>
-                    <a class="footer-a" href="javascript:;">新闻中心</a>
-                    <a class="footer-a" href="javascript:;">常见问题</a>
-                    <a class="footer-a" href="javascript:;">市场分析</a>
-                    <a class="footer-a" href="javascript:;">联系我们</a>
-                </div>
-            </div>
-        </div>
+    <div class="index_5">
+        <div class="common-foot"></div>
     </div>
 </div>
 
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=A4749739227af1618f7b0d1b588c0e85"></script>
-<script type="text/javascript" src="./js/jquery.min.js"></script>
-<!--<script type="text/javascript" src="./js/jquery.mmenu.min.js"></script>-->
+<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak="></script>-->
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/src/js/jquery.mmenu.min.all.js"></script>
 <!--<script type="text/javascript" src="./js/layui.all.js"></script>-->
 <script type="text/javascript" src="./js/swiper.min.js"></script>
 <script type="text/javascript" src="./js/wow.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
 <script type="text/javascript">
   $(function () {
     // 渲染地图
-    var map = new BMap.Map("allmap");  // 创建Map实例
-    map.centerAndZoom("上海", 15);
+    // var map = new BMap.Map("allmap");  // 创建Map实例
+    // map.centerAndZoom("上海", 15);
     // map.enableScrollWheelZoom(true);  // 地图缩放
-
-    // 动画效果
-    new WOW().init();
 
     var swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
@@ -308,35 +301,8 @@
       prevButton: '.swiper-button-prev',
       autoplay: 3000,
       spaceBetween: 30,
-      effect: 'fade'
-    });
-
-    // 菜单
-    $('.nav-icon').click(function () {
-      $("#menu").toggle();
-      if ($('.nav-icon').hasClass('fa-align-left')) {
-        $('.nav-icon').removeClass('fa-align-left').addClass('fa-close')
-      } else {
-        $('.nav-icon').removeClass('fa-close').addClass('fa-align-left')
-      }
-    });
-
-    $('.nav-first-li > a').on('click', function () {
-      $('.nav-first').addClass('active');
-      $(this).addClass('active').siblings().show();
-      $(this).parent().siblings().children('.nav-second').hide();
-      $(this).parent().siblings().children('.nav-a').removeClass('active');
-      $('.nav-second a').removeClass('active');
-    });
-
-    $('.nav-second a').on('click', function () {
-      $(this).addClass('active').parent().siblings().children().removeClass('active');
-    });
-
-    $('.index-two').hover(function () {
-      $('.index-two .mask').addClass('active')
-    }, function () {
-      $('.index-two .mask').removeClass('active')
+      // effect: 'fade',
+      loop: true
     });
 
   });
