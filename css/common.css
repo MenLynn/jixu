@@ -689,8 +689,23 @@ textarea {resize: none !important;}
 }
 
 /*碘盐-产品介绍*/
+.introl_1 {
+    margin-bottom: 2rem;
+}
+.introl_1 .layui-tab {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+}
+.introl_1 .layui-tab-title {
+    width: 20%;
+    height: auto;
+    border: 0;
+    float: left;
+}
 .introl_1 .layui-tab-content {
     padding-left: 20%;
+    background: #fff;
 }
 .introl_1 .layui-tab-card>.layui-tab-title li {
     display: block;
@@ -748,14 +763,23 @@ textarea {resize: none !important;}
     margin-top: -8px;
 }
 .introl_1 .tab-text {
-    margin: 4rem 0 6rem;
-    padding: 0 2rem;
+    padding: 4rem 2rem 6rem;
 }
 .introl_1 .fontmid {
     margin: 2rem 0 .5rem;
 }
 .introl_1 .fontext {
     line-height: 2rem;
+}
+.introl_1 .layui-tab-title.layui-tab-more .fa {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.introl_1 .layui-tab-card>.layui-tab-title .layui-tab-bar {
+    line-height: 50px;
 }
 
 
@@ -914,6 +938,26 @@ textarea {resize: none !important;}
     }
     .advantage_1-item .item_box:nth-child(2n) {
         padding-right: 0;
+    }
+    .introl_1 .layui-tab-title {
+        width: initial;
+        float: none;
+    }
+    .introl_1 .layui-tab-card>.layui-tab-title li {
+        display: inline-block;
+        width: 33%;
+    }
+    .introl_1 .layui-tab-content {
+        padding: 0;
+    }
+    .introl_1 .tab-text {
+        padding: 3rem 1rem 1rem;
+    }
+    .introl_1 .item-box {
+        width: 50%;
+    }
+    .introl_1 .fonttit {
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 700px){
