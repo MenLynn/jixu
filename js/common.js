@@ -1,4 +1,6 @@
 $(function () {
+  // $('#panel-menu').load('common-menu.html');
+  // $('.aa').load('common-header.html');
   $('.common-foot').load('footer.html');
 
   // 动画效果

@@ -3,76 +3,134 @@
 <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>常见问题</title>
     <meta name="description" content="。。。">
     <meta name="keywords" content="积旭">
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="css/common1.css"/>
-    <link rel="stylesheet" href="./css/question.css"/>
+    <link rel="stylesheet" href="css/layui/layui.css"/>
+    <link rel="stylesheet" href="./js/src/css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/swiper/swiper.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-<!--头部搜索导航-->
-<div class="header clearfix"></div>
-<!--主体-->
-<div class="question clearfix">
-    <!--左侧导航-->
-    <div class="nav-box"></div>
-    <!--右侧主体-->
-    <div class="section">
-        <div class="question-box info-box">
-            <h1 class="title">常见问题？(FAQS)</h1>
-            <div class="question-item">
-                <div class="item-title">关于盐的普通知识</div>
-                <div class="item-box">
-                    <div class="collapse-top">
-                        盐是什么？
-                        <img class="pull-right icon1" style="width: 10px;" src="./img/icon-hand-up.png">
-                        <img class="pull-right icon2" style="width: 10px;" src="./img/icon-hand-down.png">
-                    </div>
-                    <div class="collapse-box">
-                        化学意义上来说，盐一直就是钠离子和氯离子的结合-氯化钠。它是一种矿物质，对于我们身体的构成和功能非常重要。在食盐范围里人们区分蒸发盐–从卤水中提炼出来的， 海盐-从海水中提炼，以及岩盐-矿井里采集出来的。
-                    </div>
-                </div>
+
+<div id="page" class="index info-padding news">
+    <!-- 菜单 -->
+    <div id="menu" class="mm-menu mm-offcanvas animated bounceInRight">
+        <div id="panel-menu">
+            <ul>
+                <li>
+                    <a class="nav-a" href="javascript:void(0);">
+                        碘盐 / Bad Reichenhaller
+                    </a>
+                    <ul class="menu_2">
+                        <li><a class="nav-a" href="javascript:void(0);">品牌介绍</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">产品优势</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">产品介绍</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">产品详情</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-a" href="javascript:void(0);">
+                        护肤 / Love Your Planet
+                    </a>
+                    <ul class="menu_2">
+                        <li><a class="nav-a" href="javascript:void(0);">1</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">2</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">3</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-a" href="javascript:void(0);">
+                        牙膏 / Putzi
+                    </a>
+                    <ul class="menu_2">
+                        <li><a class="nav-a" href="javascript:void(0);">1</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">2</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">3</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-a" href="javascript:void(0);">
+                        锅具 / Riess
+                    </a>
+                    <ul class="menu_2">
+                        <li><a class="nav-a" href="javascript:void(0);">1</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">2</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">3</a></li>
+                        <li><a class="nav-a" href="javascript:void(0);">4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-a" href="./about-us.html" target="_blank">
+                        关于我们 / About US
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-a" href="./news.html" target="_blank">
+                        新闻中心 / News
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-a" href="./question.html" target="_blank">
+                        常见问题 / FAQ
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-a" href="./contact.html" target="_blank">
+                        联系我们 / Contact US
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fixed_top clearfix layui-show-sm-block layui-hide-xs">
+        <div class="pull-left" style="padding-right: 2rem;">
+            <a href="#menu" class="fa fa-bars font24"></a>
+            <a href="#page" class="fa fa-close font24"></a>
+        </div>
+        <div class="pull-left" style="padding-left: 3rem;">
+            <img class="icon-logo" src="./img/icon-logo.png">
+        </div>
+        <div class="pull-right">
+            <i class="fa fa-search" style="font-size: 1.6rem;"></i>
+        </div>
+    </div>
+    <div class="fixed_top layui-hide-sm" style="left: initial;">
+        <div class="pull-right">
+            <a href="#menu" class="fa fa-bars font24"></a>
+            <a href="#page" class="fa fa-close font24"></a>
+        </div>
+    </div>
+    <div class="page-box">
+        <div class="layui-row aboutus_1">
+            <div class="layui-col-xs12 font32 news_1-title wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.25s">
+                常见问题？(FAQS)
             </div>
-            <div class="question-item">
-                <div class="item-title">关于盐的普通知识</div>
-                <div class="item-box">
-                    <div class="collapse-top">
-                        盐是什么？
-                        <img class="pull-right icon1" style="width: 10px;" src="./img/icon-hand-up.png">
-                        <img class="pull-right icon2" style="width: 10px;" src="./img/icon-hand-down.png">
-                    </div>
-                    <div class="collapse-box">
-                        化学意义上来说，盐一直就是钠离子和氯离子的结合-氯化钠。它是一种矿物质，对于我们身体的构成和功能非常重要。在食盐范围里人们区分蒸发盐–从卤水中提炼出来的， 海盐-从海水中提炼，以及岩盐-矿井里采集出来的。
-                    </div>
-                </div>
-                <div class="item-box">
-                    <div class="collapse-top">
-                        盐是什么？
-                        <img class="pull-right icon1" style="width: 10px;" src="./img/icon-hand-up.png">
-                        <img class="pull-right icon2" style="width: 10px;" src="./img/icon-hand-down.png">
-                    </div>
-                    <div class="collapse-box">
-                        化学意义上来说，盐一直就是钠离子和氯离子的结合-氯化钠。它是一种矿物质，对于我们身体的构成和功能非常重要。在食盐范围里人们区分蒸发盐–从卤水中提炼出来的， 海盐-从海水中提炼，以及岩盐-矿井里采集出来的。
-                    </div>
+            <div class="question_box">
+                <h3 class="question_box-title">关于盐的普通知识</h3>
+                <div class="question_box-item">
+
                 </div>
             </div>
         </div>
-        <!--footer-->
-        <div class="footer-box"></div>
     </div>
+    <div class="common-foot"></div>
 </div>
 
 <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/src/js/jquery.mmenu.min.all.js"></script>
+<script type="text/javascript" src="./js/wow.min.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
-<script type="text/javascript">
-    $(function () {
-      $('.collapse-top').click(function () {
-        $(this).toggleClass('active');
-        $(this).siblings('.collapse-box').fadeToggle();
-      });
-    })
-</script>
 </body>
 </html>
