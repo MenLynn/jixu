@@ -22,19 +22,19 @@
 </head>
 <body>
 
-<div id="page" class="index info-padding contract">
+<div id="page" class="index contract">
     <!-- 菜单 -->
     <div id="menu" class="mm-menu mm-offcanvas animated bounceInRight">
         <div id="panel-menu">
-            <ul>
+            <ul class="menu-ul">
                 <li>
                     <a class="nav-a" href="javascript:void(0);">
                         碘盐 / Bad Reichenhaller
                     </a>
                     <ul class="menu_2">
-                        <li><a class="nav-a" href="javascript:void(0);">品牌介绍</a></li>
-                        <li><a class="nav-a" href="javascript:void(0);">产品优势</a></li>
-                        <li><a class="nav-a" href="javascript:void(0);">产品介绍</a></li>
+                        <li><a class="nav-a" href="./salt-brand.html">品牌介绍</a></li>
+                        <li><a class="nav-a" href="./salt-product-advantage.html">产品优势</a></li>
+                        <li><a class="nav-a" href="./salt-product-intro.html">产品介绍</a></li>
                         <li><a class="nav-a" href="javascript:void(0);">产品详情</a></li>
                     </ul>
                 </li>
@@ -72,22 +72,22 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="nav-a" href="./about-us.html" target="_blank">
+                    <a class="nav-a" href="./about-us.html">
                         关于我们 / About US
                     </a>
                 </li>
                 <li>
-                    <a class="nav-a" href="./news.html" target="_blank">
+                    <a class="nav-a" href="./news.html">
                         新闻中心 / News
                     </a>
                 </li>
                 <li>
-                    <a class="nav-a" href="./question.html" target="_blank">
+                    <a class="nav-a" href="./question.html">
                         常见问题 / FAQ
                     </a>
                 </li>
                 <li>
-                    <a class="nav-a" href="./contact.html" target="_blank">
+                    <a class="nav-a" href="./contact.html">
                         联系我们 / Contact US
                     </a>
                 </li>
@@ -114,15 +114,114 @@
         </div>
     </div>
     <!-- 主体 -->
-    <div class="page-box">
-        <div class="layui-row contract_1">
-            <div class="layui-col-xs12">22</div>
-            <div class="layui-col-xs12 font22 title">对我们的产品有什么问题吗? 对这个网站有什么意见吗? 那么请与我们联络.</div>
-            <div class="layui-col-xs-1">您的信息*</div>
-            <div class="layui-col-xs-11">
-
+    <div id="page-content" class="info-padding">
+        <div class="page-box">
+            <div class="layui-row contract_1">
+                <div class="layui-col-md7 contract_1-lf">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 wow flipInX animated" data-wow-duration="1s" data-wow-delay="0.25s">联系我们</div>
+                        <div class="layui-col-xs12 font22 title wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.28s">对我们的产品有什么问题吗? 对这个网站有什么意见吗? 那么请与我们联络.</div>
+                        <div class="layui-col-xs12">
+                            <form class="layui-form layui-row" action="">
+                                <div class="layui-col-xs12 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">输入框</label>
+                                        <div class="layui-input-block">
+                                            <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-lg4 layui-col-md6 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.32s">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">称呼</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="gender" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-lg4 layui-col-md6 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.34s">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">名</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="second_name" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-lg4 layui-col-md6 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.36s">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">姓</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="first_name" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-lg8 layui-col-md6 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.38s">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">E-Mail*</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="e_mail" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-lg8 layui-col-md6 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">街道*</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="address" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-lg4 layui-col-md6 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.42s">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">号码*</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="phone" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-lg8 layui-col-md6 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.44s">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">邮编*</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="code" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-lg4 layui-col-md6 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.46s">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">地方*</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="place" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-xs12 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.48s">
+                                    <div class="layui-form-item send">
+                                        <div class="layui-input-block">
+                                            <button class="layui-btn layui-btn-warm btn-send">发 送</button>
+                                            <p class="font14" style="color: #666;line-height: 1.4rem;">
+                                                您的个人资料我们会绝对保密。我们只使用它一次来回答你的问题。我们不会向第三方披露您的个人信息或与其它人共享。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md5 contract_1-rt font16 wow fadeInRight animated" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="box">
+                        <p>联系方式 </p>
+                        <h3 class="company font22">上海积锦电子有限公司</h3>
+                        <p>工作日： 8:30-21:00</p>
+                        <p>咨询热线： 4008207820</p>
+                        <p>上海市徐汇区漕溪路270号2号楼2205室</p>
+                        <p>pm@e-point.cn</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="common-foot"></div>
     </div>
 </div>
 

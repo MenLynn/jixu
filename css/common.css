@@ -36,6 +36,7 @@ table{border-collapse: collapse;}
 .ui-20 { width: 20%;}		/*5col*/
 
 
+.font12{font-size:0.8rem;}
 .font14{font-size:0.875rem;}
 .font16{font-size:1rem;}
 .font17{font-size:1.0625rem;}
@@ -64,6 +65,7 @@ table{border-collapse: collapse;}
 .font132{font-size:8.25rem}
 
 .info-img {width: 100%;height: 100%;object-fit: cover;}
+textarea {resize: none !important;}
 
 @keyframes load{0%{transform:rotate(0)}
     50%{transform:rotate(-36000deg)}
@@ -507,10 +509,15 @@ table{border-collapse: collapse;}
 .brand_3 .item_1-box {
     opacity: .8;
     position: absolute;
-    top: 1rem;
+    top: 50%;
     left: 2rem;
-    bottom: 1rem;
     right: 2rem;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .brand_3-box .item_title, .advantage_1-box .item_title {
     margin-bottom: 1rem;
@@ -525,7 +532,7 @@ table{border-collapse: collapse;}
     left: 0;
 }
 
-/**/
+/*碘盐-产品优势*/
 .advantage_1-item {
     display: flex;
     justify-content: space-around;
@@ -618,9 +625,77 @@ table{border-collapse: collapse;}
     color: #ccc;
     margin-left: 1.5rem;
 }
+#page-content {
+    min-height: 100vh;
+    background: #f7f7f7;
+}
 
+/*常见问题*/
+.question {
+    margin-bottom: 3rem;
+}
+.question_box-title {
+    margin: 1rem 0;
+}
+.question_box .layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.question_box .layui-card-body {
+    display: none;
+    color: #666;
+}
+.question_box .layui-card-body.layui-card-body-show {
+    display: block;
+}
+.question_box .layui-card, .question_box {
+    margin-bottom: 1rem;
+}
 
+/*联系我们*/
+.contract_1 {
+    padding: 2rem 0;
+}
+.contract_1-lf {
+    padding: 0 4rem;
+}
+.layui-form-label {
+    padding: 9px 10px;
+}
+.contract_1 .layui-input-block {
+    margin-left: 90px;
+}
+.contract_1-rt {
+    line-height: 2rem;
+    padding: 3rem 2rem;
+}
+.contract_1-rt .box {
+    width: 70%;
+    background: #fff;
+    padding: 2rem;
+}
+.contract_1-rt .company {
+    margin: 1rem 0;
+    padding-top: 1rem;
+    border-top: 2px solid #333;
+}
 
+.contract_1 .btn-send {
+    width: 10rem;
+    color: #333;
+    margin: 1.5rem 0 2rem;
+}
+
+/*碘盐-产品介绍*/
+.introl_1 .layui-tab-card>.layui-tab-title li {
+    display: block;
+    margin: 0;
+}
+.introl_1 .layui-tab-card>.layui-tab-title {
+    background: #f7f7f7;
+}
 
 
 
@@ -701,6 +776,12 @@ table{border-collapse: collapse;}
     .news_1-itemrt .item-box {
         padding-left: 0;
         position: initial;
+    }
+    .contract_1-lf {
+        padding-left: 5rem;
+    }
+    .contract_1-rt .box {
+        width: 100%;
     }
 }
 @media (max-width: 768px){
@@ -806,6 +887,29 @@ table{border-collapse: collapse;}
     }
     .advantage_2-text .text-ul {
         margin-left: 0;
+    }
+    .question {
+        margin-bottom: 0;
+    }
+    .contract_1-lf {
+        padding: 0 1rem;
+    }
+    .contract_1-rt .company {
+        font-size: 1.2rem;
+    }
+    .contract_1 .title {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .contract_1-rt, .contract_1-rt .box {
+        padding: 1rem;
+    }
+    .contract_1 {
+        padding: 0;
+    }
+    .contract_1 .send .layui-input-block {
+        margin-left: 0;
+        text-align: center;
     }
 }
 @media (max-width: 350px){
