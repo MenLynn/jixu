@@ -689,6 +689,9 @@ textarea {resize: none !important;}
 }
 
 /*碘盐-产品介绍*/
+.introl_1 .layui-tab-content {
+    padding-left: 20%;
+}
 .introl_1 .layui-tab-card>.layui-tab-title li {
     display: block;
     margin: 0;
@@ -696,6 +699,65 @@ textarea {resize: none !important;}
 .introl_1 .layui-tab-card>.layui-tab-title {
     background: #f7f7f7;
 }
+.introl_1 .layui-tab-card>.layui-tab-title .layui-this {
+    background: #fff;
+}
+.introl_1 .layui-tab-card>.layui-tab-title .layui-this:after {
+    border: 0;
+}
+.introl_1 .tab-imgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+.introl_1 .item-box {
+    width: 25%;
+    padding: 1rem 2rem;
+    position: relative;
+}
+.introl_1 .item-box_img {
+    width: 60%;
+}
+.introl_1 .last {
+    margin-top: 2rem;
+}
+.introl_1 .item-box_hover {
+    display: none;
+    width: 25rem;
+    line-height: 2rem;
+    background: #f7f7f7;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    z-index: 9;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.introl_1 .item-box_hover:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right-color: #f7f7f7;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    margin-top: -8px;
+}
+.introl_1 .tab-text {
+    margin: 4rem 0 6rem;
+    padding: 0 2rem;
+}
+.introl_1 .fontmid {
+    margin: 2rem 0 .5rem;
+}
+.introl_1 .fontext {
+    line-height: 2rem;
+}
+
 
 
 
