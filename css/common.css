@@ -203,7 +203,7 @@ textarea {resize: none !important;}
     background-repeat: no-repeat;
 }
 .index_swiper {
-    background: #272727;
+    /*background: #272727;*/
 }
 .index_swiper .swiper-button-next, .index_swiper .swiper-button-prev {
     width: 3rem;
@@ -692,6 +692,12 @@ textarea {resize: none !important;}
 .introl_1 {
     margin-bottom: 2rem;
 }
+.introl_1 .animated {
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
 .introl_1 .layui-tab {
     border: 0;
     box-shadow: none;
@@ -704,7 +710,7 @@ textarea {resize: none !important;}
     float: left;
 }
 .introl_1 .layui-tab-content {
-    padding-left: 20%;
+    padding: 0 0 2rem 20%;
     background: #fff;
 }
 .introl_1 .layui-tab-card>.layui-tab-title li {
@@ -761,6 +767,17 @@ textarea {resize: none !important;}
     top: 50%;
     left: -16px;
     margin-top: -8px;
+}
+.introl_1 .item-box_hover.is_right {
+    left: initial;
+    right: 100%;
+    text-align: right;
+}
+.introl_1 .item-box_hover.is_right:before {
+    border-color: transparent;
+    border-left-color: #f7f7f7;
+    left: initial;
+    right: -16px;
 }
 .introl_1 .tab-text {
     padding: 4rem 2rem 6rem;
@@ -921,6 +938,222 @@ textarea {resize: none !important;}
     background-size: cover;
 }
 
+/*锅具-产品优势*/
+.cook-advant .advantage_1-item {
+    color: #333;
+    opacity: 1;
+}
+.cook-advant_1 .item_box {
+    padding: 1rem 0 0 1rem;
+}
+.cook-advant_1 .item_1 {
+    width: 40%;
+    padding: 2rem 4rem 0;
+}
+.cook-advant_1 .item_2 {
+    width: 60%;
+}
+.cook-advant .item_text {
+    margin-bottom: 1rem;
+}
+.cook-advant .line {
+    height: 1px;
+}
+.cook-advant_2 {
+    margin-top: 1rem;
+}
+.cook-advant_2 .item_1 {
+    width: 50%;
+    padding: 2rem 4rem 0;
+}
+.cook-advant_2 .item_2 {
+    width: 50%;
+}
+.cook-advant_2 .advantage_1-item .item_box {
+    width: 100%;
+    padding: 0;
+}
+.cook-advant_2 .item-box_ul span {
+    font-size: .5rem;
+    font-weight: 600;
+}
+.cook-advant_2 .item-box_ul .item_text {
+    margin-left: 6rem;
+}
+.banner-mask {
+    color: #fffae2;
+    background: rgba(0,0,0,.8);
+    padding: 2.5rem;
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 41%;
+    right: 10%;
+    z-index: 9;
+}
+.banner-mask .title {
+    margin-bottom: 2rem;
+}
+.banner-mask .fontext {
+    line-height: 1.8rem;
+}
+
+/*锅具-产品介绍*/
+.cook-tab_swiper .swiper-slide {
+    margin-bottom: 1rem;
+}
+.cook-intro .tab-text {
+    padding: 3rem 2rem;
+}
+.cook-intro .layui-tab-card>.layui-tab-title li {
+    padding: 1rem 0;
+}
+.button-prev, .button-next {
+    color: #2e2f7d;
+    cursor: pointer;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.button-prev .fa, .button-next .fa {
+    font-size: 1.3rem;
+}
+.button-prev {
+    left: -5rem;
+}
+.button-next {
+    right: -5rem;
+}
+.cook-intro .tab-swiper {
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+.cook-intro .swiper-slide_txt {
+    opacity: 0;
+    width: 30%;
+    color: #fff;
+    background: #2e2f7d;
+    font-size: 1rem;
+    padding: .3rem;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.cook-intro .tab-swiper .swiper-slide:hover .swiper-slide_txt {
+    opacity: 1;
+    top: 50%;
+}
+.swiper-container-fade .swiper-slide {
+    pointer-events: auto;
+}
+.cook-intro .swiper-slide-pic {
+    padding-bottom: 46%;
+}
+.cook-intro .swiper-slide_box {
+    width: 40%;
+    color: #503c57;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 4rem;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.cook-intro .swiper-slide_box .fintit {
+    margin-bottom: 3rem;
+}
+.cook-intro .swiper-slide_box .fontxt {
+    line-height: 1.6rem;
+}
+.cook-intro .swiper-slide_box .btn-s {
+    display: inline-block;
+    color: #02427e;
+    font-weight: 600;
+    padding: .3rem 1rem;
+    margin-top: 4rem;
+    border: 1px solid #02427e;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+.modal-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255,255,255,.5);
+}
+.modal-box {
+    background: #cec9c2;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    bottom: 10%;
+    right: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 2rem;
+}
+.modal-box_content {
+    height: 100%;
+    overflow: auto;
+    padding: 0 3rem;
+}
+.modal-box .box-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.modal-box .item_1 {
+    padding: 1rem 5rem;
+}
+.modal-box .item_1, .modal-box .item_2 {
+    width: 50%;
+}
+.modal-box .item_title {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.modal-box .item_text {
+    line-height: 1.8rem;
+}
+.modal-close {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 99;
+    margin-top: -1.5rem;
+    cursor: pointer;
+}
+
 
 
 
@@ -1000,6 +1233,15 @@ textarea {resize: none !important;}
     .cookware-brand_2 .brand-text {
         position: initial;
         margin-top: 3rem;
+    }
+    .cook-advant_1 .item_box {
+        padding: 1rem .5rem 0!important;
+    }
+    .cook-advant_1 .item_2 {
+        padding: 0 .5rem;
+    }
+    .cook-advant .item_1 {
+        padding: 2rem 1rem 0 !important;
     }
 }
 @media screen and (max-width: 991px){
@@ -1184,6 +1426,13 @@ textarea {resize: none !important;}
     .cookware-brand_2-box .brand-lf .fontit {
         font-size: 1.2rem;
         margin: 1rem 0;
+    }
+    .modal-box_content {
+        padding: 0;
+    }
+    .modal-box .item_1, .modal-box .item_2 {
+        width: 100%;
+        padding: 0;
     }
 }
 @media (max-width: 350px){
