@@ -782,6 +782,146 @@ textarea {resize: none !important;}
     line-height: 50px;
 }
 
+/*产品目录*/
+.summary-item {
+    margin-top: 4rem;
+}
+.summary-item .fontaddr {
+    margin: 2rem 0 .8rem;
+}
+.summary-item .fontext {
+    line-height: 1.6rem;
+}
+.summary-item .imgs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.summary-item .imgs-box {
+    width: 25%;
+    padding: 2rem 1rem;
+}
+.summary-item .imgs-box_img {
+    width: 60%;
+}
+.summary .page-box_row {
+    margin-top: 10rem;
+}
+.summary .page-box_col {
+    margin-top: -12rem;
+}
+
+/*锅具-品牌介绍*/
+.cookware-brand_2 {
+    position: relative;
+    margin-top: 3rem;
+}
+.cookware-brand_2 .brand-text {
+    position: absolute;
+    top: -3rem;
+    left: 60%;
+    right: 10%;
+    bottom: 3rem;
+    color: #333;
+    background: #ffc000;
+    padding: 2rem;
+    line-height: 2rem;
+    font-size: .6rem;
+}
+.cookware-brand_2 .brand-text p {
+    margin-bottom: .5rem;
+}
+.cookware-brand_2 .brand-text_box {
+    color: #333;
+    background: #ffc000;
+}
+.cookware-brand .item_1, .cookware-brand .item_2 {
+    width: 50%;
+}
+.cookware-brand .advantage_1-item {
+    color: #333;
+    opacity: 1;
+}
+.cookware-brand .item_box {
+    width: 70%;
+}
+.cookware-brand_2-box {
+    color: #ffc000;
+}
+.cookware-brand_2-box .brand-lf {
+    width:50%;
+}
+.cookware-brand_2-box .brand-lf .fontit {
+    margin: 3rem 0;
+}
+.cookware-brand_2-box .brand-lf p {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+.cookware-brand_2-box .brand-lf .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+.brand_3-title {
+    height: 12rem;
+    line-height: 12rem;
+    text-align: center;
+    position: relative;
+}
+.brand_3-title .txt1 {
+    font-size: 7rem;
+    opacity: .05;
+}
+.brand_3-title .txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 2rem;
+}
+.brand_3-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.brand_3-list .bg-color1 {
+    background: #fcfcfc;
+}
+.brand_3-list .bg-color2 {
+    background: #fff;
+}
+.brand_3-list .list-item {
+    width: 25%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.brand_3-list .list-item_first .list-item_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.brand_3-list .list-item_text {
+    line-height: 1.5rem;
+}
+.brand_3-list .list-item_first {
+    background: url("../img/salt-cookware-img0.png") no-repeat center;
+    background-size: cover;
+}
+.brand_3-list .list-item_last {
+    width: 50%;
+    background: url("../img/salt-cookware-img9.jpg") no-repeat right center;
+    background-size: cover;
+}
+
+
 
 
 
@@ -846,6 +986,20 @@ textarea {resize: none !important;}
     .advantage_1-item .item_1  {
         padding-right: 0;
         margin-bottom: 2rem;
+    }
+    .cookware-brand .item_box {
+        width: 100%;
+        padding: 0 !important;
+    }
+    .cookware-brand_2 {
+        margin-top: 0;
+    }
+    .cookware-brand_2-box .brand-lf {
+        width: 100%;
+    }
+    .cookware-brand_2 .brand-text {
+        position: initial;
+        margin-top: 3rem;
     }
 }
 @media screen and (max-width: 991px){
@@ -970,6 +1124,16 @@ textarea {resize: none !important;}
     .nav-first.active {
         left: 0;
     }
+    .summary-item .imgs-box {
+        width: 50%;
+    }
+    .brand_3-list .list-item {
+        width: 50%;
+        padding: 1.5rem;
+    }
+    .brand_3-list .list-item_last {
+        width: 100%;
+    }
 
 }
 @media (max-width: 520px){
@@ -1017,6 +1181,10 @@ textarea {resize: none !important;}
         margin-left: 0;
         text-align: center;
     }
+    .cookware-brand_2-box .brand-lf .fontit {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
 }
 @media (max-width: 350px){
     .brand_1-img {
@@ -1051,6 +1219,12 @@ textarea {resize: none !important;}
     .brand_3-box .item_text {
         height: 4rem;
         overflow: hidden;
+    }
+    .summary .page-box_row {
+        margin-top: 3rem;
+    }
+    .summary .page-box_col {
+        margin-top: -5rem;
     }
 }
 
