@@ -66,6 +66,9 @@
     right: 0;
     z-index: 100;
 }
+.fixed_top2 {
+    display: none;
+}
 .fixed_top .fa-close {
     display: none!important;
 }
@@ -89,6 +92,14 @@
     }
     .mm-list.menu_2, .info-padding {
         padding-top: 4rem;
+    }
+}
+@media (max-width: 520px) {
+    .fixed_top1 {
+        display: none;
+    }
+    .fixed_top2 {
+        display: block;
     }
 }
 
