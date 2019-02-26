@@ -119,78 +119,7 @@ textarea {resize: none !important;}
     padding: .6rem;
 }
 
-/*头部*/
-.icon-logo {
-    width: 9rem;
-    height: 2rem;
-}
-#menu {
-    width: 100%;
-    z-index: 99;
-    font-size: 1rem;
-    background: rgba(0,0,0,.3);
-    color: #333;
-}
-#panel-menu {
-    padding-left: 6rem;
-    padding-top: 6rem;
-    height: 90%;
-    background: #fff;
-}
-.mm-page {
-    width: 100% !important;
-    left: 0 !important;
-}
-.mm-list {
-    padding-top: 6rem;
-    text-align: center;
-}
-.mm-list.menu_2 {
-    padding-top: 6rem;
-}
-#mm-blocker {
-    display: none !important;
-}
-.mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-noresults)::after,
-.mm-menu .mm-list > li > a.mm-subopen:before{
-    content: normal;
-}
-.mm-menu .mm-list > li > a.mm-subopen:after, .mm-menu .mm-list > li > a.mm-subclose:before {
-    border-color: #666;
-}
-.mm-menu .mm-list > li > a.mm-subclose {
-    background: transparent;
-    color: #333;
-}
-.mm-opened .mm-menu.mm-horizontal > .mm-panel {
-    height: 90%;
-    background: #fff;
-}
-.mm-menu .mm-list > li.mm-selected > a:not(.mm-subopen), .mm-menu .mm-list > li.mm-selected > span {
-    background: transparent;
-    color: #ffba00;
-}
-.mm-btn_next:after, .mm-btn_prev:before {
-}
-
 /*index*/
-.fixed_top .fa-close {
-    display: none!important;
-}
-.mm-opening a[href="#menu"] {
-    display: none!important;
-}
-.mm-opening a[href="#page"] {
-    display: block!important;
-}
-.fixed_top {
-    padding: 2rem;
-    position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-}
 .swiper-slide-pic {
     display: block;
     width: 100%;
@@ -1543,12 +1472,6 @@ textarea {resize: none !important;}
     }
 }
 @media (max-width: 768px){
-    #menu {
-        left: 0;
-    }
-    .fixed_top {
-        padding: 1rem;
-    }
     .index_2 {
         font-size: 1.2rem;
     }
@@ -1569,14 +1492,6 @@ textarea {resize: none !important;}
     }
     .index_contact2 {
         padding: 2rem 1rem;
-    }
-    #panel-menu {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 3rem;
-    }
-    .mm-list.menu_2, .info-padding {
-        padding-top: 4rem;
     }
     .aboutus_1, .news_1 {
         width: 100%;
@@ -1638,12 +1553,6 @@ textarea {resize: none !important;}
 @media (max-width: 700px){
     .menu-box {
         padding-bottom: 75%;
-    }
-    .nav-second {
-        position: initial;
-    }
-    .nav-first.active {
-        left: 0;
     }
     .summary-item .imgs-box {
         width: 50%;

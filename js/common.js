@@ -1,21 +1,9 @@
 $(function () {
+  $('#common-header').load('common-header.html');
   $('.common-foot').load('footer.html');
 
   // 动画效果
   new WOW().init();
-
-  /**
-   * 菜单
-   */
-  $("#menu").mmenu({
-    "extensions": [
-      "position-bottom",
-      ""
-    ],
-    "offCanvas": {
-      "position": "right"
-    }
-  });
 
   /**
    * 首页相关
