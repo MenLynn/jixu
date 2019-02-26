@@ -6,9 +6,7 @@
     <div id="panel-menu">
         <ul>
             <li>
-                <a class="nav-a" href="javascript:void(0);">
-                    碘盐 / Bad Reichenhaller
-                </a>
+                <span>碘盐 / Bad Reichenhaller</span>
                 <ul class="menu_2">
                     <li><a class="nav-a" href="./salt-brand.html">品牌介绍</a></li>
                     <li><a class="nav-a" href="./salt-product-advantage.html">产品优势</a></li>
@@ -17,9 +15,7 @@
                 </ul>
             </li>
             <li>
-                <a class="nav-a" href="javascript:void(0);">
-                    护肤 / Love Your Planet
-                </a>
+                <span>护肤 / Love Your Planet</span>
                 <ul class="menu_2">
                     <li><a class="nav-a" href="./skin-brand.html">品牌介绍</a></li>
                     <li><a class="nav-a" href="./skin-product-advantage.html">产品优势</a></li>
@@ -27,17 +23,13 @@
                 </ul>
             </li>
             <li>
-                <a class="nav-a" href="javascript:void(0);">
-                    牙膏 / Putzi
-                </a>
+                <span>牙膏 / Putzi</span>
                 <ul class="menu_2">
-                    <li><a class="nav-a" href="./skin-brand.html">1</a></li>
+                    <li><a class="nav-a" href="./skin-brand.html">品牌介绍</a></li>
                 </ul>
             </li>
             <li>
-                <a class="nav-a" href="javascript:void(0);">
-                    锅具 / Riess
-                </a>
+                <span>锅具 / Riess</span>
                 <ul class="menu_2">
                     <li><a class="nav-a" href="./cookware-brand.html">品牌介绍</a></li>
                     <li><a class="nav-a" href="./cookware-product-advantage.html">产品优势</a></li>
@@ -45,47 +37,61 @@
                 </ul>
             </li>
             <li>
-                <a class="nav-a" href="./about-us.html" target="_blank">
+                <a class="nav-a" style="padding-right: 40px;" href="./about-us.html">
                     关于我们 / About US
                 </a>
             </li>
             <li>
-                <a class="nav-a" href="./news.html" target="_blank">
+                <a class="nav-a" style="padding-right: 40px;" href="./news.html">
                     新闻中心 / News
                 </a>
             </li>
             <li>
-                <a class="nav-a" href="./question.html" target="_blank">
+                <a class="nav-a" style="padding-right: 40px;" href="./question.html">
                     常见问题 / FAQ
                 </a>
             </li>
             <li>
-                <a class="nav-a" href="./contact.html" target="_blank">
+                <a class="nav-a" style="padding-right: 40px;" href="./contact.html">
                     联系我们 / Contact US
                 </a>
             </li>
         </ul>
     </div>
 </div>
-<div class="fixed_top fixed_top1 clearfix">
-    <div class="pull-left" style="padding-right: 2rem;">
+<div class="fixed_top fixed_top1">
+    <div style="padding-right: 2rem;">
         <a href="#menu" class="fa fa-bars" style="font-size: 1.6rem;"></a>
         <a href="#page" class="fa fa-close" style="font-size: 1.6rem;"></a>
     </div>
-    <div class="pull-left" style="padding-left: 3rem;">
+    <div class="fixed_top-search" style="padding-left: 3rem;">
         <a href="./index.html"><img class="icon-logo" src="./img/icon-logo.png"></a>
-    </div>
-    <div class="pull-right">
-        <i class="fa fa-search" style="font-size: 1.6rem;"></i>
+        <div class="search-box">
+            <input type="text" placeholder="输入关键字" autocomplete="off" class="layui-input">
+            <i class="fa fa-search" style="font-size: 1.6rem;"></i>
+        </div>
     </div>
 </div>
-<div class="fixed_top fixed_top2" style="left: initial;">
-    <div class="pull-right">
+<div class="fixed_top fixed_top2">
+    <div class="fixed_top-search">
+        <a href="./index.html"><img class="icon-logo" src="./img/icon-logo.png"></a>
+        <div class="search" id="search-show">
+            <i class="fa fa-search" style="font-size: 1.6rem;"></i>
+        </div>
+    </div>
+    <div>
         <a href="#menu" class="fa fa-bars" style="font-size: 1.6rem;"></a>
         <a href="#page" class="fa fa-close" style="font-size: 1.6rem;"></a>
     </div>
 </div>
-
+<div class="fixed_top fixed_top3">
+    <div class="fixed_top-search" style="padding-left: 0;">
+        <div class="search-box" style="width: 100%;">
+            <input type="text" placeholder="输入关键字" autocomplete="off" class="layui-input">
+            <i class="fa fa-search" style="font-size: 1.6rem;"></i>
+        </div>
+    </div>
+</div>
 <script type="text/javascript" src="./js/src/js/jquery.mmenu.min.all.js"></script>
 <script type="text/javascript">
   $(function () {
@@ -99,8 +105,29 @@
       ],
       "offCanvas": {
         "position": "right"
+      },
+      setSelected: true,
+    });
+
+    $('#search-show').on('click', function () {
+      $('.fixed_top3').toggle();
+      if ($('.fixed_top3').css("display") !== 'none') {
+        $('#page').css('padding-top', '116px')
+      } else {
+        $('#page').css('padding-top', '58px')
       }
     });
+
+    $(window).resize(function () {
+      if ($('.fixed_top2').css("display") !== 'none') {
+        $('#page').css('padding-top', '58px');
+        $('.fixed_top3').hide();
+      }
+      if ($('.fixed_top1').css("display") !== 'none') {
+        console.log(44);
+        $('#page').css('padding-top', '78px');
+      }
+    })
   })
 </script>
 

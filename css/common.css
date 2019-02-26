@@ -131,8 +131,8 @@ textarea {resize: none !important;}
     background-position: center;
     background-repeat: no-repeat;
 }
-.index_swiper {
-    /*background: #272727;*/
+.index {
+    padding-top: 78px;
 }
 .index_swiper .swiper-slide_txt {
     color: #ffc000;
@@ -948,6 +948,7 @@ textarea {resize: none !important;}
     left: 41%;
     right: 10%;
     z-index: 9;
+    overflow: hidden;
 }
 .banner-mask .title {
     margin-bottom: 2rem;
