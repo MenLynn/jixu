@@ -60,14 +60,17 @@
     </div>
 </div>
 <div class="fixed_top fixed_top1">
-    <div style="padding-right: 2rem;">
+    <div class="icons" style="padding-right: 2rem;">
         <a href="#menu" class="fa fa-bars" style="font-size: 1.6rem;"></a>
         <a href="#page" class="fa fa-close" style="font-size: 1.6rem;"></a>
     </div>
-    <div class="fixed_top-search" style="padding-left: 3rem;">
+    <div class="fixed_top-search">
         <a href="./index.html"><img class="icon-logo" src="./img/icon-logo.png"></a>
-        <div class="search-box">
-            <input type="text" placeholder="输入关键字" autocomplete="off" class="layui-input">
+        <div class="input-show">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="search-box" style="display: none;">
+            <input type="text" name="search" placeholder="输入关键字" autocomplete="off" class="layui-input search-input">
             <i class="fa fa-search"></i>
         </div>
     </div>
@@ -82,14 +85,6 @@
     <div>
         <a href="#menu" class="fa fa-bars" style="font-size: 1.6rem;"></a>
         <a href="#page" class="fa fa-close"></a>
-    </div>
-</div>
-<div class="fixed_top fixed_top3">
-    <div class="fixed_top-search" style="padding-left: 0;">
-        <div class="search-box" style="width: 100%;">
-            <input type="text" placeholder="输入关键字" autocomplete="off" class="layui-input">
-            <i class="fa fa-search"></i>
-        </div>
     </div>
 </div>
 <script type="text/javascript" src="./js/src/js/jquery.mmenu.min.all.js"></script>
@@ -109,22 +104,38 @@
       setSelected: true,
     });
 
+    // 搜索
+    $('.search-box .fa-search').on('click', function () {
+      alert('点我 ！点我 ！点我 ！1111')
+    });
+    $('.search-input').bind('keydown',function(event){
+      if (event.keyCode === 13) {
+        alert('点我 ！点我 ！点我 ！22222');
+      }
+    });
+
+    // 小屏模式下的搜索框显示
     $('#search-show').on('click', function () {
-      $('.fixed_top3').toggle();
-      if ($('.fixed_top3').css("display") !== 'none') {
+      $('.fixed_top1').toggleClass('is_show');
+      if ($('.fixed_top1').css("display") !== 'none') {
         $('#page').css('padding-top', '116px')
       } else {
         $('#page').css('padding-top', '58px')
       }
     });
 
+    // 大中屏模式下的搜索框显示
+    $('.input-show').on('click', function () {
+      $(this).hide();
+      $(this).siblings('.search-box').fadeIn(200);
+    });
+
     $(window).resize(function () {
       if ($('.fixed_top2').css("display") !== 'none') {
         $('#page').css('padding-top', '58px');
-        $('.fixed_top3').hide();
-      }
-      if ($('.fixed_top1').css("display") !== 'none') {
-        console.log(44);
+        $('.fixed_top1').hide();
+      } else {
+        $('.fixed_top1').show().removeClass('is_show');
         $('#page').css('padding-top', '78px');
       }
     })
