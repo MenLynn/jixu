@@ -1566,6 +1566,12 @@ textarea {resize: none !important;}
     }
 }
 @media (max-width: 520px){
+    .swiper-slide-pic {
+        padding-bottom: 65%;
+    }
+    .index_1-item {
+        height: 12rem;
+    }
     .index_1-box .index_1-item {
         width: 100% !important;
     }
