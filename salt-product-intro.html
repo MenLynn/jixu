@@ -314,25 +314,7 @@
     var swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
       paginationClickable: '.swiper-pagination',
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
     });
-
-    // 小屏时tab切换的下拉修改
-    $('.layui-tab-bar').children('i')
-      .removeClass('layui-icon')
-      .addClass('fa').addClass('fa-chevron-down')
-      .css({color: '#666','font-size': '1rem'}).html('');
-
-    // 设置最小高
-    $('.layui-tab-content').css('min-height', $('.layui-tab-title').height() + 'px');
-
-    // hover效果
-    $('.introl_1 .img-box').hover(function () {
-      $(this).siblings('.item-box_hover').show(200);
-    }, function () {
-      $(this).siblings('.item-box_hover').hide(200);
-    })
   });
 </script>
 </body>

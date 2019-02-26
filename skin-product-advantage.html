@@ -377,10 +377,8 @@
       limit: 10 // 注意：请务必确保 limit 参数（默认：10）是与你服务端限定的数据条数一致
     });
 
-    // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('chart'));
-
     // 折线图绘制
+    var myChart = echarts.init(document.getElementById('chart'));
     var option = {
       title: {
         text: ''
@@ -427,13 +425,7 @@
         }
       }]
     };
-
-    // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
-
-    $(window).resize(function () {
-
-    })
   });
 </script>
 </body>

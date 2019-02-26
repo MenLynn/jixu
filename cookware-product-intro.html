@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="./css/layui/layui.css"/>
     <link rel="stylesheet" href="./js/src/css/jquery.mmenu.all.css"/>
-    <!--<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css"/>-->
     <link rel="stylesheet" href="./css/swiper/swiper.min.css"/>
     <link rel="stylesheet" href="./css/animate.css"/>
     <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css"/>
@@ -286,22 +285,6 @@
       $(this).parents('.modal').fadeOut(250);
       $('body').css('overflow', 'auto');
     });
-
-    // 小屏时tab切换的下拉修改
-    $('.layui-tab-bar').children('i')
-      .removeClass('layui-icon')
-      .addClass('fa').addClass('fa-chevron-down')
-      .css({color: '#666','font-size': '1rem'}).html('');
-
-    // 设置最小高
-    $('.layui-tab-content').css('min-height', $('.layui-tab-title').height() + 'px');
-
-    // hover效果
-    $('.introl_1 .img-box').hover(function () {
-      $(this).siblings('.item-box_hover').fadeIn(200);
-    }, function () {
-      $(this).siblings('.item-box_hover').fadeOut(100);
-    })
 
     //添加滚动条样式
     $(".modal-box_content").niceScroll({
