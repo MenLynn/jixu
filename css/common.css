@@ -211,7 +211,7 @@ textarea {resize: none !important;}
 }
 .footer-list .list_item {
     line-height: 2rem;
-    padding: 0 1.4rem;
+    padding: 1rem 1.4rem;
 }
 .footer-list .last-title {
     padding-left: 3rem;
@@ -666,6 +666,7 @@ textarea {resize: none !important;}
 }
 .announcement-detail .detail-con p {
     padding-top: 1rem;
+    word-break: break-all;
 }
 .announcement-detail .detail-page {
     display: flex;
@@ -841,6 +842,9 @@ textarea {resize: none !important;}
     }
 }
 @media (max-width: 768px){
+    .question-box .line {
+        display: none;
+    }
 
 }
 @media screen and (max-width: 750px) {
@@ -917,6 +921,40 @@ textarea {resize: none !important;}
     }
     .biwin-box .item {
         width: 100%;
+    }
+    .footer-list .list_item {
+        padding: 1rem .5rem;
+    }
+    .footer-list .list_item-last {
+        margin-left: 0;
+    }
+    .footer-list .last-title, .footer-list .last-box {
+        padding-left: 0;
+        border: 0;
+    }
+    .announcement-box .box {
+        display: block;
+    }
+    .announcement-detail .detail-page .jump {
+        margin: 0;
+    }
+    .help-box-lf {
+        float: none;
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 1rem;
+    }
+    .help-box-rt {
+        margin-left: 0;
+    }
+    .help-box_con img {
+        width: 100%;
+    }
+    .help-box {
+        margin-bottom: 0;
+    }
+    .listed .aboutus1-box_con {
+        background: none;
     }
 }
 @media (max-width: 350px){
