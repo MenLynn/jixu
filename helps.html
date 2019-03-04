@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>新手帮助</title>
+    <meta name="description" content="。。。">
+    <meta name="keywords" content="积旭">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="./layui/css/layui.css"/>
+    <link rel="stylesheet" href="./css/swiper/swiper.min.css"/>
+    <link rel="stylesheet" href="./css/animate.css"/>
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/common.css"/>
+    <!--<link id="layuicss-laydate" rel="stylesheet" href="http://www.apestone.com/ls/styles/style/layui/css/modules/laydate/default/laydate.css?v=5.0.9" media="all">-->
+    <!--<link id="layuicss-layer" rel="stylesheet" href="http://www.apestone.com/ls/styles/style/layui/css/modules/layer/default/layer.css?v=3.1.1" media="all">-->
+    <!--<link id="layuicss-skincodecss" rel="stylesheet" href="http://www.apestone.com/ls/styles/style/layui/css/modules/code.css" media="all">-->
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="help">
+    <div class="layui-layout layui-layout-admin">
+        <!--头部导航-->
+        <div class="header">
+            <div class="layui-header">
+                <div class="header-box width1200">
+                    <div class="layui-main" style="margin-left: 0;margin-right:0;">
+                        <a class="logo" href="./index.html">
+                            <img src="./img/logo_01.png" alt="layui">
+                        </a>
+                        <ul class="layui-nav layui-hide-xs header-left" lay-filter="">
+                            <li class="layui-nav-item"><a href="./index.html">首页</a></li>
+                            <li class="layui-nav-item">
+                                <a href="javascript:;">关于我们</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="./biwin.html">关于BIWIN</a></dd>
+                                    <dd><a href="./contact.html">联系我们</a></dd>
+                                    <dd><a href="">上市申请</a></dd>
+                                </dl>
+                            </li>
+                            <li class="layui-nav-item">
+                                <a href="javascript:;">行情中心</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="">挂牌交易OTC</a></dd>
+                                    <dd><a href="">币币交易</a></dd>
+                                    <dd><a href="">定存交易（社区）</a></dd>
+                                    <dd><a href="">在线商城</a></dd>
+                                </dl>
+                            </li>
+                            <li class="layui-nav-item">
+                                <a href="javascript:;">资讯中心</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="">Biwin动态</a></dd>
+                                    <dd><a href="">行情分析</a></dd>
+                                    <dd><a href="./market.html">行业资讯</a></dd>
+                                </dl>
+                            </li>
+                            <li class="layui-nav-item layui-this">
+                                <a href="javascript:;">帮助中心</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="">最新公告</a></dd>
+                                    <dd><a href="">新手帮助（教程）</a></dd>
+                                    <dd><a href="">常见问题</a></dd>
+                                </dl>
+                            </li>
+                            <li class="layui-nav-item">
+                                <a href="javascript:;">条款说明</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="">用户协议</a></dd>
+                                    <dd><a href="">隐私条款</a></dd>
+                                    <dd><a href="">法律声明</a></dd>
+                                    <dd><a href="">费率标准</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="layui-form header-right">
+                            <ul class="layui-nav">
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">登录 <i class="fa fa-user-circle"></i></a>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">简体中文</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="javascript:;">简体中文</a></dd>
+                                        <dd><a href="javascript:;">English</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item layui-hide-sm layui-show-xs">
+                                    <a href="javascript:;" class="nav-show" style="padding-right: 0;">
+                                        <i class="fa fa-list-ul"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="layui-nav layui-nav-tree layui-hide-sm layui-show-xs" lay-filter="test">
+                                <li class="layui-nav-item"><a href="./index.html">首页</a></li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">关于我们</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="./biwin.html">关于BIWIN</a></dd>
+                                        <dd><a href="./contact.html">联系我们</a></dd>
+                                        <dd><a href="">上市申请</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">行情中心</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="">挂牌交易OTC</a></dd>
+                                        <dd><a href="">币币交易</a></dd>
+                                        <dd><a href="">定存交易（社区）</a></dd>
+                                        <dd><a href="">在线商城</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">资讯中心</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="">Biwin动态</a></dd>
+                                        <dd><a href="">行情分析</a></dd>
+                                        <dd><a href="./market.html">行业资讯</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item layui-this">
+                                    <a href="javascript:;">帮助中心</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="">最新公告</a></dd>
+                                        <dd><a href="">新手帮助（教程）</a></dd>
+                                        <dd><a href="">常见问题</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">条款说明</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="">用户协议</a></dd>
+                                        <dd><a href="">隐私条款</a></dd>
+                                        <dd><a href="">法律声明</a></dd>
+                                        <dd><a href="">费率标准</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-search layui-hide-sm layui-show-xs">
+                            <i class="fa fa-search search-show" style="border: 1px solid #fff;padding: 5px;border-radius: 50%;top: 0;right: 25px;"></i>
+                        </div>
+                        <div class="header-search layui-hide-xs">
+                            <input class="layui-input input-search" placeholder="QUC">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--banner-->
+        <div class="swiper-banner swiper-container swiper-container-horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:" class="swiper-slide-pic" style="background-image: url(./img/aboutus-banner2.jpg);"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:" class="swiper-slide-pic" style="background-image: url(./img/aboutus-banner1.jpg);"></a>
+                </div>
+            </div>
+        </div>
+        <div class="help1" style="min-height: 80vh;">
+            <div class="width1200 clearfix">
+                <div style="margin: 2rem 0;" class="text-right wow flipInX" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <span class="font12">当前位置：</span>
+                    <span class="layui-breadcrumb" lay-separator=">">
+                        <a href="">首页</a>
+                        <a href="">帮助中心</a>
+                        <a><cite>新手帮助</cite></a>
+                    </span>
+                </div>
+                <div class="btns text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 0 0 2rem;">
+                    <button class="layui-btn layui-btn-primary">最新公告</button>
+                    <button class="layui-btn layui-btn-warm">新手帮助</button>
+                    <button class="layui-btn layui-btn-primary">常见问题</button>
+                </div>
+                <div class="help-box font12 clearfix">
+                    <ul class="help-box-lf wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <li>
+                            <span class="pull-left font32">·</span>
+                            <div class="txt">邀请好友操作流程</div>
+                        </li>
+                        <li>
+                            <span class="pull-left font32">·</span>
+                            <div class="txt">用户注册流程</div>
+                        </li>
+                        <li>
+                            <span class="pull-left font32">·</span>
+                            <div class="txt">实名认证操作流程</div>
+                        </li>
+                        <li>
+                            <span class="pull-left font32">·</span>
+                            <div class="txt">币币交易操作流程</div>
+                        </li>
+                        <li>
+                            <span class="pull-left font32">·</span>
+                            <div class="txt">充值操作流程</div>
+                        </li>
+                        <li>
+                            <span class="pull-left font32">·</span>
+                            <div class="txt">提币操作流程</div>
+                        </li>
+                        <li>
+                            <span class="pull-left font32">·</span>
+                            <div class="txt">修改密码操作流程</div>
+                        </li>
+                        <li>
+                            <span class="pull-left font32">·</span>
+                            <div class="txt">找回密码操作</div>
+                        </li>
+                    </ul>
+                    <div class="help-box-rt">
+                        <h3 class="font14 wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s">邀请好友操作流程</h3>
+                        <p class="other wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <span>发布人：BIWIN</span>
+                            <span>发布时间：2019-2-25</span>
+                            <span>浏览量：100</span>
+                        </p>
+                        <div class="help-box_con">
+                            <div class="item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <h3 class="font12 fontit">1. 打开APP首页，点击右下方【我的】</h3>
+                                <img src="./img/help-img1.png">
+                            </div>
+                            <div class="item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <h3 class="font12 fontit">2. 点击【邀请好友】</h3>
+                                <img src="./img/help-img2.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="footer"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/swiper.min.js"></script>
+<script type="text/javascript" src="./js/wow.min.js"></script>
+<script src="./layui/layui.js"></script>
+<script src="./js/common.js"></script>
+<script>
+  // 轮播
+  var swiper1 = new Swiper('.swiper-banner', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    autoplay: 3000,
+    loop: true
+  });
+</script>
+</body>
+</html>

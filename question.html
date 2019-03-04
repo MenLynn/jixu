@@ -8,13 +8,14 @@
     <meta name="description" content="。。。">
     <meta name="keywords" content="积旭">
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="css/layui/layui.css"/>
-    <link rel="stylesheet" href="css/swiper/swiper.min.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="css/common.css"/>
-    <link id="layuicss-laydate" rel="stylesheet" href="http://www.apestone.com/ls/styles/style/layui/css/modules/laydate/default/laydate.css?v=5.0.9" media="all">
-    <link id="layuicss-layer" rel="stylesheet" href="http://www.apestone.com/ls/styles/style/layui/css/modules/layer/default/layer.css?v=3.1.1" media="all">
-    <link id="layuicss-skincodecss" rel="stylesheet" href="http://www.apestone.com/ls/styles/style/layui/css/modules/code.css" media="all">
+    <link rel="stylesheet" href="./layui/css/layui.css"/>
+    <link rel="stylesheet" href="./css/swiper/swiper.min.css"/>
+    <link rel="stylesheet" href="./css/animate.css"/>
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/common.css"/>
+    <!--<link id="layuicss-laydate" rel="stylesheet" href="http://www.apestone.com/ls/styles/style/layui/css/modules/laydate/default/laydate.css?v=5.0.9" media="all">-->
+    <!--<link id="layuicss-layer" rel="stylesheet" href="http://www.apestone.com/ls/styles/style/layui/css/modules/layer/default/layer.css?v=3.1.1" media="all">-->
+    <!--<link id="layuicss-skincodecss" rel="stylesheet" href="http://www.apestone.com/ls/styles/style/layui/css/modules/code.css" media="all">-->
     <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
     <!--[if lt IE 9]>
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
@@ -22,64 +23,294 @@
     <![endif]-->
 </head>
 <body>
-
-<div id="page" class="index news">
-    <!-- 菜单 -->
-    <div id="common-header"></div>
-    <div id="page-content" class="info-padding">
-        <div class="page-box">
-            <div class="layui-row info-box73 question">
-                <div class="layui-col-xs12 font32 news_1-title wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.25s">
-                    常见问题？(FAQS)
-                </div>
-                <div class="layui-col-xs12 question_box">
-                    <h3 class="question_box-title font20 wow lightSpeedIn animated" data-wow-duration="1s" data-wow-delay="0.25s">关于盐的普通知识</h3>
-                    <div class="layui-card wow lightSpeedIn animated" data-wow-duration="1s" data-wow-delay="0.27s">
-                        <div class="layui-card-header font16">盐是什么?  <i class="fa fa-hand-o-down"></i></div>
-                        <div class="layui-card-body layui-card-body-show font14 animated fadeIn">
-                            化学意义上来说，盐一直就是钠离子和氯离子的结合-氯化钠。它是一种矿物质，对于我们身体的构成和功能非常重要。在食盐范围里人们区分蒸发盐–从卤水中提炼出来的， 海盐-从海水中提炼，以及岩盐-矿井里采集出来的。
+<div class="question">
+    <div class="layui-layout layui-layout-admin">
+        <!--头部导航-->
+        <div class="header">
+            <div class="layui-header">
+                <div class="header-box width1200">
+                    <div class="layui-main" style="margin-left: 0;margin-right:0;">
+                        <a class="logo" href="./index.html">
+                            <img src="./img/logo_01.png" alt="layui">
+                        </a>
+                        <ul class="layui-nav layui-hide-xs header-left" lay-filter="">
+                            <li class="layui-nav-item"><a href="./index.html">首页</a></li>
+                            <li class="layui-nav-item">
+                                <a href="javascript:;">关于我们</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="./biwin.html">关于BIWIN</a></dd>
+                                    <dd><a href="./contact.html">联系我们</a></dd>
+                                    <dd><a href="">上市申请</a></dd>
+                                </dl>
+                            </li>
+                            <li class="layui-nav-item">
+                                <a href="javascript:;">行情中心</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="">挂牌交易OTC</a></dd>
+                                    <dd><a href="">币币交易</a></dd>
+                                    <dd><a href="">定存交易（社区）</a></dd>
+                                    <dd><a href="">在线商城</a></dd>
+                                </dl>
+                            </li>
+                            <li class="layui-nav-item">
+                                <a href="javascript:;">资讯中心</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="">Biwin动态</a></dd>
+                                    <dd><a href="">行情分析</a></dd>
+                                    <dd><a href="./market.html">行业资讯</a></dd>
+                                </dl>
+                            </li>
+                            <li class="layui-nav-item layui-this">
+                                <a href="javascript:;">帮助中心</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="">最新公告</a></dd>
+                                    <dd><a href="">新手帮助（教程）</a></dd>
+                                    <dd><a href="">常见问题</a></dd>
+                                </dl>
+                            </li>
+                            <li class="layui-nav-item">
+                                <a href="javascript:;">条款说明</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="">用户协议</a></dd>
+                                    <dd><a href="">隐私条款</a></dd>
+                                    <dd><a href="">法律声明</a></dd>
+                                    <dd><a href="">费率标准</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="layui-form header-right">
+                            <ul class="layui-nav">
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">登录 <i class="fa fa-user-circle"></i></a>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">简体中文</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="javascript:;">简体中文</a></dd>
+                                        <dd><a href="javascript:;">English</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item layui-hide-sm layui-show-xs">
+                                    <a href="javascript:;" class="nav-show" style="padding-right: 0;">
+                                        <i class="fa fa-list-ul"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="layui-nav layui-nav-tree layui-hide-sm layui-show-xs" lay-filter="test">
+                                <li class="layui-nav-item"><a href="./index.html">首页</a></li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">关于我们</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="./biwin.html">关于BIWIN</a></dd>
+                                        <dd><a href="./contact.html">联系我们</a></dd>
+                                        <dd><a href="">上市申请</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">行情中心</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="">挂牌交易OTC</a></dd>
+                                        <dd><a href="">币币交易</a></dd>
+                                        <dd><a href="">定存交易（社区）</a></dd>
+                                        <dd><a href="">在线商城</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">资讯中心</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="">Biwin动态</a></dd>
+                                        <dd><a href="">行情分析</a></dd>
+                                        <dd><a href="./market.html">行业资讯</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item layui-this">
+                                    <a href="javascript:;">帮助中心</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="">最新公告</a></dd>
+                                        <dd><a href="">新手帮助（教程）</a></dd>
+                                        <dd><a href="">常见问题</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="javascript:;">条款说明</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a href="">用户协议</a></dd>
+                                        <dd><a href="">隐私条款</a></dd>
+                                        <dd><a href="">法律声明</a></dd>
+                                        <dd><a href="">费率标准</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="layui-col-xs12 question_box">
-                    <h3 class="question_box-title font20 wow lightSpeedIn animated" data-wow-duration="1s" data-wow-delay="0.29s">食盐和调味盐</h3>
-                    <div class="layui-card wow lightSpeedIn animated" data-wow-duration="1s" data-wow-delay="0.31s">
-                        <div class="layui-card-header font16">盐可以存放多久？  <i class="fa fa-hand-o-down"></i></div>
-                        <div class="layui-card-body font14 animated fadeIn">
-                            化学意义上来说，盐一直就是钠离子和氯离子的结合-氯化钠。它是一种矿物质，对于我们身体的构成和功能非常重要。在食盐范围里人们区分蒸发盐–从卤水中提炼出来的， 海盐-从海水中提炼，以及岩盐-矿井里采集出来的。
+                        <div class="header-search layui-hide-sm layui-show-xs">
+                            <i class="fa fa-search search-show" style="border: 1px solid #fff;padding: 5px;border-radius: 50%;top: 0;right: 25px;"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="layui-col-xs12 question_box">
-                    <h3 class="question_box-title font20 wow lightSpeedIn animated" data-wow-duration="1s" data-wow-delay="0.33s">盐和我们的身体</h3>
-                    <div class="layui-card wow lightSpeedIn animated" data-wow-duration="1s" data-wow-delay="0.35s">
-                        <div class="layui-card-header font16">身体如何吸收盐？  <i class="fa fa-hand-o-down"></i></div>
-                        <div class="layui-card-body font14 animated fadeIn">
-                            化学意义上来说，盐一直就是钠离子和氯离子的结合-氯化钠。它是一种矿物质，对于我们身体的构成和功能非常重要。在食盐范围里人们区分蒸发盐–从卤水中提炼出来的， 海盐-从海水中提炼，以及岩盐-矿井里采集出来的。
+                        <div class="header-search layui-hide-xs">
+                            <input class="layui-input input-search" placeholder="QUC">
+                            <i class="fa fa-search"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="common-foot"></div>
+        <!--banner-->
+        <div class="swiper-banner swiper-container swiper-container-horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:" class="swiper-slide-pic" style="background-image: url(./img/aboutus-banner1.jpg);"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:" class="swiper-slide-pic" style="background-image: url(./img/aboutus-banner2.jpg);"></a>
+                </div>
+            </div>
+        </div>
+        <div class="question1" style="min-height: 80vh;">
+            <div class="width1200 clearfix">
+                <div style="margin: 2rem 0;" class="text-right wow flipInX" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <span class="font12">当前位置：</span>
+                    <span class="layui-breadcrumb" lay-separator=">">
+                        <a href="">首页</a>
+                        <a href="">帮助中心</a>
+                        <a><cite>常见问题</cite></a>
+                    </span>
+                </div>
+                <div class="btns text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="0.4s" style="padding: 0 0 2rem;">
+                    <button class="layui-btn layui-btn-primary">最新公告</button>
+                    <button class="layui-btn layui-btn-primary">新手帮助</button>
+                    <button class="layui-btn layui-btn-warm">常见问题</button>
+                </div>
+                <div class="question-box layui-row font12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.15s">
+                    <div class="layui-col-sm6 question-box_con">
+                        <div class="layui-collapse">
+                            <div class="layui-colla-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.25s">
+                                <div class="layui-colla-title active">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">实名认证审核需要多长时间？</p>
+                                </div>
+                                <div class="layui-colla-content layui-show">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">我们严格遵循后台审核流程，对于符合审核通过条件的用户，我们会尽快通过审核。 如遇到提交量较多的情况下有可能会需要较长的时间，请用户耐心等候，谢谢。</p>
+                                </div>
+                            </div>
+                            <div class="layui-colla-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <div class="layui-colla-title">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">无法登录账户怎么办？</p>
+                                </div>
+                                <div class="layui-colla-content">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">内容区域</p>
+                                </div>
+                            </div>
+                            <div class="layui-colla-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <div class="layui-colla-title">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">如何修改用户名？</p>
+                                </div>
+                                <div class="layui-colla-content">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">内容区域</p>
+                                </div>
+                            </div>
+                            <div class="layui-colla-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
+                                <div class="layui-colla-title">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">手机收不到短信验证码怎么办？</p>
+                                </div>
+                                <div class="layui-colla-content">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">内容区域</p>
+                                </div>
+                            </div>
+                            <div class="layui-colla-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+                                <div class="layui-colla-title">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">应用程序无法正常开启？</p>
+                                </div>
+                                <div class="layui-colla-content">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">内容区域</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-sm6 question-box_con">
+                        <div class="layui-collapse">
+                            <div class="layui-colla-item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="layui-colla-title">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">实名认证审核需要多长时间？</p>
+                                </div>
+                                <div class="layui-colla-content">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">我们严格遵循后台审核流程，对于符合审核通过条件的用户，我们会尽快通过审核。 如遇到提交量较多的情况下有可能会需要较长的时间，请用户耐心等候，谢谢。</p>
+                                </div>
+                            </div>
+                            <div class="layui-colla-item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <div class="layui-colla-title">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">无法登录账户怎么办？</p>
+                                </div>
+                                <div class="layui-colla-content">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">内容区域</p>
+                                </div>
+                            </div>
+                            <div class="layui-colla-item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <div class="layui-colla-title">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">如何修改用户名？</p>
+                                </div>
+                                <div class="layui-colla-content">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">内容区域</p>
+                                </div>
+                            </div>
+                            <div class="layui-colla-item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.8s">
+                                <div class="layui-colla-title">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">手机收不到短信验证码怎么办？</p>
+                                </div>
+                                <div class="layui-colla-content">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">内容区域</p>
+                                </div>
+                            </div>
+                            <div class="layui-colla-item wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="layui-colla-title">
+                                    <span class="pull-left">A：</span>
+                                    <p class="item-txt">应用程序无法正常开启？</p>
+                                </div>
+                                <div class="layui-colla-content">
+                                    <span class="pull-left">Q：</span>
+                                    <p class="item-txt">内容区域</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="footer"></div>
     </div>
 </div>
 
 <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/swiper.min.js"></script>
 <script type="text/javascript" src="./js/wow.min.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
-<script type="text/javascript">
-  $(function () {
-    $('.layui-card-header').on('click', function () {
-      var child = $(this).children('.fa');
-      if (child.hasClass('fa-hand-o-up')) {
-        child.removeClass('fa-hand-o-up').addClass('fa-hand-o-down')
-      } else {
-        child.addClass('fa-hand-o-up').removeClass('fa-hand-o-down')
-      }
-      $(this).siblings('.layui-card-body').toggleClass('layui-card-body-show');
-    })
-  })
+<script src="./layui/layui.js"></script>
+<script src="./js/common.js"></script>
+<script>
+  // 轮播
+  var swiper1 = new Swiper('.swiper-banner', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    autoplay: 3000,
+    loop: true
+  });
+
 </script>
 </body>
 </html>
