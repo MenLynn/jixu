@@ -159,9 +159,6 @@
                 <div class="swiper-slide">
                     <a href="javascript:" class="swiper-slide-pic" style="background-image: url(./img/aboutus-banner2.jpg);"></a>
                 </div>
-                <div class="swiper-slide">
-                    <a href="javascript:" class="swiper-slide-pic" style="background-image: url(./img/aboutus-banner1.jpg);"></a>
-                </div>
             </div>
         </div>
         <div class="biwin1" style="min-height: 80vh;">
@@ -256,12 +253,9 @@
 <script src="./js/common.js"></script>
 <script>
   // 轮播
-  var swiper1 = new Swiper('.swiper-banner', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    autoplay: 3000,
-    loop: true
-  });
+  // var swiper1 = new Swiper('.swiper-banner', {
+  //   pagination: '.swiper-pagination'
+  // });
   layui.use('laypage', function(){
     var laypage = layui.laypage;
     laypage.render({
